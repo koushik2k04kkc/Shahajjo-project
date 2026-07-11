@@ -21,6 +21,7 @@ export const initSocketServer = (httpServer) => {
   io.on("connection", (socket) => {
     const user = socket.user;
     socket.join(`role:${user.role}`);
+    socket.join(`agent:${user.id}`);
     if (user.provider_id) socket.join(`provider:${user.provider_id}`);
     if (user.assigned_areas) {
       user.assigned_areas.forEach((area) => socket.join(`area:${area}`));
