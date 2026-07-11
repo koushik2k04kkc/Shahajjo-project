@@ -1,0 +1,1 @@
+import{useSlaTimer}from'../hooks/useSlaTimer';export default function SlaCountdownBadge({deadline}){const sla=useSlaTimer(deadline);return <span className={`rounded-full px-2 py-1 text-[10px] font-bold ${sla.expired?'bg-red-50 text-red-700':sla.minutes<15&&!sla.hours?'bg-orange-50 text-orange-700':'bg-slate-100 text-slate-600'}`}>{sla.label}</span>}
