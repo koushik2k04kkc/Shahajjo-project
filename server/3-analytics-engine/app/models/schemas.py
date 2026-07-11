@@ -11,6 +11,8 @@ class ProviderEnum(str, Enum):
 class TransactionType(str, Enum):
     CASH_IN = "cash_in"
     CASH_OUT = "cash_out"
+    P2P = "p2p"
+    MERCHANT_PAY = "merchant_pay"
 
 class Transaction(BaseModel):
     transaction_id: str
