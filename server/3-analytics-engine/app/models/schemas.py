@@ -13,6 +13,7 @@ class TransactionType(str, Enum):
     CASH_OUT = "cash_out"
     P2P = "p2p"
     MERCHANT_PAY = "merchant_pay"
+    BUY_FLOAT = "buy_float"
 
 class Transaction(BaseModel):
     transaction_id: str
