@@ -32,8 +32,11 @@ class AnalyticsEngine:
         all_raw_alerts = liquidity_raw_alerts + anomaly_raw_alerts
         
         for raw_alert in all_raw_alerts:
+            # Use confidence_override if present, else fallback to DQ-based confidence
+            final_confidence = raw_alert.get("confidence_override", confidence)
+            
             # Call OpenAI (or fallback) for natural language evidence
-            enriched_data = self.evidence_generator.generate_alert_details(raw_alert, confidence)
+            enriched_data = self.evidence_generator.generate_alert_details(raw_alert, final_confidence)
             
             alert = Alert(
                 alert_id=str(uuid.uuid4()),
@@ -46,7 +49,7 @@ class AnalyticsEngine:
                 message_banglish=enriched_data["message_banglish"],
                 recommended_action=enriched_data["recommended_action"],
                 evidence_details=enriched_data["evidence_details"],
-                confidence_level=confidence,
+                confidence_level=final_confidence,
                 timestamp=datetime.now(timezone.utc)
             )
             alerts.append(alert)
