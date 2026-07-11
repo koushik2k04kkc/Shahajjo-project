@@ -13,23 +13,33 @@ class LiquidityForecaster:
     def analyze(self, state: AgentState) -> List[Dict]:
         alerts_data = []
         now = datetime.now(timezone.utc)
-        one_hour_ago = now - timedelta(hours=1)
-        
         provider_vols = {p.value: {"cash_in": 0.0, "cash_out": 0.0} for p in ProviderEnum}
         
-        # In a more advanced version, we'd use apply_exponential_smoothing on historical 
-        # time-bucketed data. For MVP, we sum the recent hour.
-        for tx in state.recent_transactions:
-            try:
-                tx_time = tx.timestamp.replace(tzinfo=timezone.utc)
-            except:
-                tx_time = tx.timestamp
-                
-            if tx_time >= one_hour_ago:
-                if tx.type == TransactionType.CASH_IN:
-                    provider_vols[tx.provider.value]["cash_in"] += tx.amount
-                elif tx.type == TransactionType.CASH_OUT:
-                    provider_vols[tx.provider.value]["cash_out"] += tx.amount
+        if not state.recent_transactions:
+            return alerts_data
+            
+        df = pd.DataFrame([t.model_dump() for t in state.recent_transactions])
+        df['timestamp'] = pd.to_datetime(df['timestamp'], utc=True)
+        
+        for provider in ProviderEnum:
+            prov_df = df[df['provider'] == provider.value]
+            
+            # Cash In Demand
+            cash_in_df = prov_df[prov_df['type'] == TransactionType.CASH_IN.value]
+            if not cash_in_df.empty:
+                resampled = cash_in_df.set_index('timestamp').resample('15min')['amount'].sum().fillna(0)
+                if not resampled.empty:
+                    smoothed = apply_exponential_smoothing(resampled, span=3)
+                    # Forecast 1h demand = 4 periods of 15min
+                    provider_vols[provider.value]["cash_in"] = smoothed.iloc[-1] * 4
+                    
+            # Cash Out Demand
+            cash_out_df = prov_df[prov_df['type'] == TransactionType.CASH_OUT.value]
+            if not cash_out_df.empty:
+                resampled = cash_out_df.set_index('timestamp').resample('15min')['amount'].sum().fillna(0)
+                if not resampled.empty:
+                    smoothed = apply_exponential_smoothing(resampled, span=3)
+                    provider_vols[provider.value]["cash_out"] = smoothed.iloc[-1] * 4
 
         # Check e-money liquidity (pressure from cash-ins)
         for pb in state.provider_balances:
