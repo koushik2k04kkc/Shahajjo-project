@@ -1,11 +1,24 @@
-"""
-Stretch Goal: SHAP Explainer
-This file is reserved for integrating SHAP (SHapley Additive exPlanations) 
-to provide machine-learning interpretability when Isolation Forests or 
-other ML models are added in future iterations. 
-Currently unused as per MVP requirements (deterministic models only).
-"""
+import shap
+import pandas as pd
 
 class ShapExplainer:
-    def explain(self, model, data):
-        raise NotImplementedError("SHAP is planned for future enhancements.")
+    def __init__(self, model):
+        self.model = model
+        self.explainer = shap.TreeExplainer(self.model)
+        
+    def explain(self, X_anomalous: pd.DataFrame):
+        shap_values = self.explainer.shap_values(X_anomalous)
+        
+        explanations = []
+        # shap_values is a numpy array of shape (n_samples, n_features)
+        for i in range(len(X_anomalous)):
+            row_shap = shap_values[i]
+            
+            contributions = {
+                'amount': row_shap[0],
+                'velocity': row_shap[1],
+                'type_encoded': row_shap[2]
+            }
+            explanations.append(contributions)
+            
+        return explanations
