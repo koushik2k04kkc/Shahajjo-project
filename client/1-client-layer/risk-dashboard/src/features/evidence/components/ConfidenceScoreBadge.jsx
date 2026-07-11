@@ -1,0 +1,1 @@
+export default function ConfidenceScoreBadge({score}){const tone=score>=80?'bg-emerald-50 text-emerald-700':score>=60?'bg-amber-50 text-amber-700':'bg-slate-100 text-slate-600';return <span className={`rounded-full px-2 py-1 text-[10px] font-bold ${tone}`}>{score}%</span>}

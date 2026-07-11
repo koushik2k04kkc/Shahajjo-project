@@ -1,0 +1,1 @@
+const API=import.meta.env.VITE_ANALYTICS_URL||'/analytics/api/v1';export async function apiGet(path,{signal}={}){const response=await fetch(`${API}${path}`,{signal,headers:{Accept:'application/json'}});if(!response.ok)throw new Error(`Analytics request failed (${response.status})`);return response.json()}
