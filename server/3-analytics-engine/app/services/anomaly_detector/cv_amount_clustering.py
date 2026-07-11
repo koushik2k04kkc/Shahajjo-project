@@ -13,11 +13,13 @@ def detect_cv_clustering(prov_df: pd.DataFrame, provider_value: str) -> list:
         
         # Check for abnormally low variation (e.g. repeated same amounts)
         if cv < settings.CV_MODERATE:
+            tx_ids = prov_df['transaction_id'].tolist()
             alerts.append({
                 "type": "anomaly_clustering",
                 "provider": provider_value,
                 "risk_level": RiskLevel.MEDIUM if cv > 0.1 else RiskLevel.HIGH,
-                "evidence": f"Unusually stable transaction amounts detected (CV={cv:.2f} < {settings.CV_MODERATE}). Possible repeated amounts."
+                "evidence": f"Unusually stable transaction amounts detected (CV={cv:.2f} < {settings.CV_MODERATE}). Possible repeated amounts.",
+                "evidence_details": {"transaction_ids": tx_ids, "cv": cv}
             })
             
     return alerts
