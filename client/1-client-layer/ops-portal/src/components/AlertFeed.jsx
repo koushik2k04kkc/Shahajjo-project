@@ -1,25 +1,15 @@
 import { useState } from 'react'
-import { ChevronDown, ChevronRight } from 'lucide-react'
+import { ChevronDown, ChevronRight, Clock3, UserRoundCheck } from 'lucide-react'
 import { Badge, EmptyState, StatusDot } from './ui'
+import { useAppStore } from '../store/useAppStore'
 import { useCopy } from '../i18n'
+import Stepper from './Stepper'
+
+const alertSteps = [{ label: 'Detected' }, { label: 'Assigned' }, { label: 'Acknowledged' }, { label: 'Human review' }, { label: 'Resolved' }]
 
 export default function AlertFeed({ alerts = [], onRefresh }) {
-  const t = useCopy()
-  const [open, setOpen] = useState(alerts[0]?.id)
-  const [normalOpen, setNormalOpen] = useState(null)
-  if (!alerts.length) return <EmptyState title="All clear" message="No alerts require review." onAction={onRefresh} />
-  return <div>
-    <div className="mb-4 flex items-center justify-between"><div><h2 className="font-semibold">{t.alertFeed}</h2><p className="mt-0.5 text-xs text-slate-500">{t.alertHint}</p></div><Badge>{alerts.length} {t.active}</Badge></div>
-    <div className="divide-y divide-slate-100">{alerts.map((alert) => {
-      const expanded = open === alert.id
-      return <article key={alert.id} className="py-3 first:pt-0 last:pb-0">
-        <button className="flex w-full items-start gap-3 text-left" onClick={() => setOpen(expanded ? null : alert.id)} aria-expanded={expanded}>
-          <span className="mt-1.5"><StatusDot status={alert.severity} /></span><span className="min-w-0 flex-1"><span className="flex items-start justify-between gap-3"><span className="text-sm font-semibold leading-5 text-slate-800">{alert.title} <span className="whitespace-nowrap text-[10px] text-slate-400">{alert.confidence}%</span></span><span className="whitespace-nowrap text-[10px] text-slate-400">{alert.time}</span></span><span className="mt-1 block text-xs text-slate-500">{alert.provider} · {alert.id}</span></span>{expanded ? <ChevronDown className="mt-1 size-4 text-slate-400"/> : <ChevronRight className="mt-1 size-4 text-slate-400"/>}
-        </button>
-        {expanded && <div className="ml-5 mt-3 rounded-xl bg-slate-50 p-3 text-xs leading-5"><Field label={t.situation} value={alert.situation}/><Field label={t.evidence} value={alert.evidence}/><Field label={t.safeStep} value={alert.action}/><button className="mt-2 flex items-center gap-1 font-semibold text-slate-500" onClick={() => setNormalOpen(normalOpen === alert.id ? null : alert.id)}><ChevronRight className={`size-3 transition ${normalOpen === alert.id ? 'rotate-90' : ''}`}/>{t.whyNormal}</button>{normalOpen === alert.id && <p className="mt-1 pl-4 text-slate-500">{alert.normal}</p>}</div>}
-      </article>
-    })}</div>
-  </div>
+  const t = useCopy(); const bn = useAppStore((state) => state.language === 'BN'); const [open, setOpen] = useState(alerts[0]?.id); const [normalOpen, setNormalOpen] = useState(null)
+  if (!alerts.length) return <EmptyState title="All clear" message="No alerts match these filters." onAction={onRefresh}/>
+  return <div><div className="mb-4 flex items-center justify-between"><div><h2 className="font-semibold">{t.alertFeed}</h2><p className="mt-0.5 text-xs text-slate-500">{t.alertHint}</p></div><Badge>{alerts.length} {t.active}</Badge></div><div className="divide-y divide-slate-100">{alerts.map((alert) => { const expanded = open === alert.id; const low = alert.confidence < 70; return <article key={alert.id} className="py-3 first:pt-0 last:pb-0"><button className="flex w-full items-start gap-3 text-left" onClick={() => setOpen(expanded ? null : alert.id)} aria-expanded={expanded}><span className="mt-1.5"><StatusDot status={alert.severity}/></span><span className="min-w-0 flex-1"><span className="flex items-start justify-between gap-3"><span className="text-sm font-semibold leading-5 text-slate-800">{alert.title}</span><span className="whitespace-nowrap text-[10px] text-slate-400">{alert.time}</span></span><span className="mt-1 flex flex-wrap items-center gap-2 text-xs text-slate-500">{alert.provider} · {alert.area} · {alert.id}<em className={`rounded-full px-2 py-0.5 not-italic font-bold ${low ? 'bg-slate-200 text-slate-700' : 'bg-emerald-50 text-emerald-700'}`}>{low ? 'Low confidence' : 'Confidence'} · {alert.confidence}%</em></span></span>{expanded ? <ChevronDown className="mt-1 size-4 text-slate-400"/> : <ChevronRight className="mt-1 size-4 text-slate-400"/>}</button>{expanded && <div className="ml-5 mt-3 rounded-xl bg-slate-50 p-4 text-xs leading-5"><Field label={t.situation} value={bn ? alert.situationBn : alert.situation}/><Field label={t.evidence} value={alert.evidence}/><Field label={t.safeStep} value={alert.action}/><div className="mt-3 flex flex-wrap gap-2"><span className="flex items-center gap-1 rounded-full bg-white px-2.5 py-1 font-bold"><UserRoundCheck className="size-3"/>{alert.owner}</span><span className="rounded-full bg-amber-100 px-2.5 py-1 font-bold text-amber-800">{alert.status}</span></div><p className="mt-2 text-slate-500">Owned by {alert.assignedBy} · assigned to {alert.owner}</p><div className="mt-4"><Stepper steps={alert.steps || alertSteps} currentStep={alert.currentStep ?? (alert.status?.includes('review') ? 3 : 1)}/></div><div className="mt-3 border-l-2 border-slate-200 pl-3">{alert.history?.map((event) => <p key={event} className="flex items-center gap-2 py-0.5 text-slate-500"><Clock3 className="size-3"/>{event}</p>)}</div><button className="mt-2 flex items-center gap-1 font-semibold text-slate-500" onClick={() => setNormalOpen(normalOpen === alert.id ? null : alert.id)}><ChevronRight className={`size-3 transition ${normalOpen === alert.id ? 'rotate-90' : ''}`}/>{t.whyNormal}</button>{normalOpen === alert.id && <p className="mt-1 pl-4 text-slate-500">{alert.normal}</p>}<p className="mt-3 rounded-lg border border-slate-200 bg-white p-2 font-semibold text-slate-700"><b>Final outcome:</b> {alert.finalStatus || 'Not finalized — human review pending'}</p></div>}</article> })}</div></div>
 }
-
 function Field({ label, value }) { return <p className="mb-1.5"><strong className="text-slate-700">{label}:</strong> <span className="text-slate-600">{value}</span></p> }

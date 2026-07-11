@@ -7,12 +7,13 @@ import Alerts from './views/Alerts'
 import Cases from './views/Cases'
 import Metrics from './views/Metrics'
 import Settings from './views/Settings'
+import Help from './views/Help'
 
-const views = { Overview, Liquidity, Alerts, Cases, Metrics, Settings }
+const views = { Overview, Liquidity, Alerts, Cases, Metrics, Settings, Help }
 
-export default function App() {
+export default function App({ onSwitchRole }) {
   const activeView = useAppStore((state) => state.activeView)
   const data = useDashboardData()
   const View = views[activeView] || Overview
-  return <DashboardLayout><View data={data}/></DashboardLayout>
+  return <DashboardLayout onSwitchRole={onSwitchRole}><View data={data}/></DashboardLayout>
 }
