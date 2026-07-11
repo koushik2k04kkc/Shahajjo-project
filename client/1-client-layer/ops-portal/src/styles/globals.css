@@ -2,15 +2,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@layer base {
-  * { box-sizing: border-box; }
-  body { margin: 0; background: #F8F9FB; color: #172033; -webkit-font-smoothing: antialiased; font-family: 'DM Sans', 'Noto Sans Bengali', sans-serif; }
-  button, select { font: inherit; }
-  button:focus-visible, select:focus-visible { outline: 2px solid rgba(198, 0, 111, .3); outline-offset: 2px; }
-}
-
-@layer utilities {
-  .scrollbar-none::-webkit-scrollbar { display: none; }
-  .scrollbar-none { scrollbar-width: none; }
-}

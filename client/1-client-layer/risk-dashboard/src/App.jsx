@@ -8,11 +8,12 @@ import AnomalyTable from './features/anomalies/components/AnomalyTable'
 import EvidenceDrawer from './features/evidence/components/EvidenceDrawer'
 import { useLiquidityForecast } from './features/forecasts/hooks/useLiquidityForecast'
 import LiquidityForecastChart from './features/forecasts/components/LiquidityForecastChart'
+import '../../ops-portal/src/styles/ops-theme.css'
 
 const nav = [['overview', LayoutDashboard], ['map', Map], ['anomalies', Bell], ['forecast', Activity], ['agents', Users], ['settings', Settings], ['help', CircleHelp]]
 const card = 'rounded-2xl border border-slate-200 bg-white shadow-card'
 
-export default function App({ onSwitchRole }) {
+function RiskWorkspace({ onSwitchRole }) {
   const [lang, setLang] = useState(() => localStorage.getItem('risk_lang') || 'en'); const [view, setView] = useState('overview'); const [menu, setMenu] = useState(false); const [profile, setProfile] = useState(false); const [selected, setSelected] = useState(null); const [filters, setFilters] = useState({ area: 'All', provider: 'All', agent: 'All', time: 'All' })
   const t = copy[lang]; const bn = lang === 'bn'; const heat = useHeatmapData(); const anomalies = useAnomalies(); const forecast = useLiquidityForecast(); const areas = heat.data || []; const allItems = anomalies.data || []
   const items = allItems.filter((item) => (filters.area === 'All' || item.area === filters.area) && (filters.provider === 'All' || item.provider === filters.provider) && (filters.agent === 'All' || item.agent === filters.agent) && (filters.time === 'All' || item.timeBucket === filters.time))
@@ -31,3 +32,7 @@ function Filters({ items, value, onChange }) {
 }
 
 function Help() { return <div className="grid gap-4 lg:grid-cols-2"><section className={`${card} p-5`}><h2 className="font-bold">How should I read confidence?</h2><p className="mt-2 text-sm leading-6 text-slate-500">Lower confidence means data may be delayed or conflicting. Verify the provider record before escalating.</p></section><section className={`${card} p-5`}><h2 className="font-bold">What does “unusual” mean?</h2><p className="mt-2 text-sm leading-6 text-slate-500">It means the pattern requires review, not that a judgment is final. A human reviewer makes the decision.</p></section><section className={`${card} p-5`}><h2 className="font-bold">Who owns an alert?</h2><p className="mt-2 text-sm leading-6 text-slate-500">Open the evidence panel to see the assignee, status, next step, and full audit history.</p></section></div> }
+
+export default function App(props) {
+  return <div className="dashboard-wave dashboard-wave--risk"><RiskWorkspace {...props}/></div>
+}

@@ -1,5 +1,11 @@
+// Localization audit changelog: localized Help & FAQ title/subtitle and all confidence, unusual-signal, history, and operations-support questions/answers.
 import { BookOpenCheck, CircleHelp, Headphones, ShieldCheck } from 'lucide-react'
 import { Card } from '../components/ui'
 import { Page } from './Liquidity'
+import { useCopy } from '../i18n'
 
-export default function Help() { return <Page title="Help & FAQ" subtitle="Quick guidance for operations workflows"><div className="grid max-w-4xl gap-4 md:grid-cols-2"><Card className="p-5"><CircleHelp className="size-6 text-brand"/><h2 className="mt-4 font-bold">What does low confidence mean?</h2><p className="mt-2 text-sm leading-6 text-slate-500">A feed is missing, delayed, or conflicting. Verify the provider record before acting.</p></Card><Card className="p-5"><ShieldCheck className="size-6 text-emerald-600"/><h2 className="mt-4 font-bold">Is an unusual signal confirmed wrongdoing?</h2><p className="mt-2 text-sm leading-6 text-slate-500">No. It requires review. A human reviewer must confirm the final judgment.</p></Card><Card className="p-5"><BookOpenCheck className="size-6 text-sky-600"/><h2 className="mt-4 font-bold">Where is alert history?</h2><p className="mt-2 text-sm leading-6 text-slate-500">Expand an alert to see ownership, acknowledgement, escalation, evidence, and status.</p></Card><Card className="p-5"><Headphones className="size-6 text-purple-600"/><h2 className="mt-4 font-bold">Operations support</h2><p className="mt-2 text-sm leading-6 text-slate-500">Internal desk · ext. 204 · available 24/7 for continuity incidents.</p></Card></div></Page> }
+export default function Help() {
+  const t = useCopy()
+  const items = [[CircleHelp, 'text-brand', t.helpConfidenceQ, t.helpConfidenceA], [ShieldCheck, 'text-emerald-600', t.helpSignalQ, t.helpSignalA], [BookOpenCheck, 'text-sky-600', t.helpHistoryQ, t.helpHistoryA], [Headphones, 'text-purple-600', t.helpSupportQ, t.helpSupportA]]
+  return <Page title={t.Help} subtitle={t.helpSubtitle}><div className="grid max-w-4xl gap-4 md:grid-cols-2">{items.map(([Icon, color, title, copy]) => <Card className="p-5" key={title}><Icon className={`size-6 ${color}`}/><h2 className="mt-4 font-bold">{title}</h2><p className="mt-2 text-sm leading-6 text-slate-500">{copy}</p></Card>)}</div></Page>
+}
