@@ -1,0 +1,19 @@
+{
+  "alert": {
+    "liquidity_title": "Liquidity shongkot",
+    "anomaly_title": "Oshabhavik kajkormo",
+    "requires_review": "Manob porjalochona proyojon",
+    "confidence": "Nirbhorjogota",
+    "possible_causes": "Shombhobbo karon",
+    "next_step": "Poroborti podokkhep",
+    "escalated": "Unnito kora hoyeche",
+    "resolved": "Somadhan kora hoyeche"
+  },
+  "roles": {
+    "agent": "Agent",
+    "field_officer": "Field Officer",
+    "area_manager": "Area Manager",
+    "ops_team": "Operations Team",
+    "risk_analyst": "Risk Analyst"
+  }
+}
