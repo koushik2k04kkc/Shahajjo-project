@@ -37,7 +37,7 @@ export const createTransaction = async (req, res, next) => {
     let alerts = [];
 
     if (analysis.alerts?.length > 0) {
-      alerts = await createAlert(analysis, agent_id, user);
+      alerts = await createAlert(analysis, actual_account_id, agent_id, user);
       for (const alert of alerts) {
         dispatchAlert(alert, { id: alert.caseId });
       }

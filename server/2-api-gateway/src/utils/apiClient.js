@@ -8,8 +8,9 @@ const apiClient = axios.create({
 });
 
 export const analyzeAgent = async (agentId, transactions, balances) => {
+  let agentState = {};
   try {
-    const agentState = {
+    agentState = {
       agent_id: agentId,
       area: "default_area",
       shared_physical_cash: 0,
@@ -32,6 +33,12 @@ export const analyzeAgent = async (agentId, transactions, balances) => {
     return data;
   } catch (err) {
     console.error("Analytics Error:", err.response?.data || err.message);
+    try {
+      import('fs').then(fs => fs.writeFileSync('validation_error.json', JSON.stringify({
+        error: err.response?.data,
+        payload: agentState
+      }, null, 2)));
+    } catch (e) {}
     return { projections: [], anomalies: [], data_quality_score: 0.3, status: "degraded", message: "Analytics engine unavailable" };
   }
 };

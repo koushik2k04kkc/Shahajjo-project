@@ -1,0 +1,15 @@
+agent_id,provider,current_balance,transaction_id,amount,type,timestamp,account_id
+Scenario_A_Hidden_Shortage,bkash,2000.0,tx-a1,500.0,cash_out,2026-07-12T10:00:00Z,acc-1
+Scenario_A_Hidden_Shortage,bkash,2000.0,tx-a2,500.0,cash_out,2026-07-12T10:05:00Z,acc-2
+Scenario_A_Hidden_Shortage,bkash,2000.0,tx-a3,500.0,cash_out,2026-07-12T10:10:00Z,acc-3
+Scenario_A_Hidden_Shortage,nagad,100000.0,tx-a4,0,cash_in,2026-07-12T10:10:00Z,acc-3
+Scenario_B_Liquidity_Plus_Anomaly,bkash,5000.0,tx-b1,15000.0,cash_out,2026-07-12T10:00:00Z,acc-h1
+Scenario_B_Liquidity_Plus_Anomaly,bkash,5000.0,tx-b2,15000.0,cash_out,2026-07-12T10:01:00Z,acc-h1
+Scenario_B_Liquidity_Plus_Anomaly,bkash,5000.0,tx-b3,15000.0,cash_out,2026-07-12T10:02:00Z,acc-h2
+Scenario_B_Liquidity_Plus_Anomaly,bkash,5000.0,tx-b4,15000.0,cash_out,2026-07-12T10:03:00Z,acc-h2
+Scenario_B_Liquidity_Plus_Anomaly,bkash,5000.0,tx-b5,15000.0,cash_out,2026-07-12T10:04:00Z,acc-h3
+Scenario_B_Liquidity_Plus_Anomaly,bkash,5000.0,tx-b6,15000.0,cash_out,2026-07-12T10:05:00Z,acc-h3
+Scenario_C_Data_Inconsistency,rocket,15000.0,tx-c1,1000.0,cash_in,2026-07-10T10:00:00Z,acc-1
+Scenario_C_Data_Inconsistency,rocket,15000.0,tx-c2,1000.0,cash_in,2026-07-10T10:05:00Z,acc-2
+Scenario_D_Normal_Response,nagad,50000.0,tx-d1,1000.0,cash_out,2026-07-12T10:00:00Z,acc-1
+Scenario_D_Normal_Response,nagad,50000.0,tx-d2,1200.0,cash_in,2026-07-12T10:10:00Z,acc-2

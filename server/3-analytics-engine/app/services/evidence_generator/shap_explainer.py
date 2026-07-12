@@ -15,9 +15,9 @@ class ShapExplainer:
             row_shap = shap_values[i]
             
             contributions = {
-                'amount': row_shap[0],
-                'velocity': row_shap[1],
-                'type_encoded': row_shap[2]
+                'amount': float(row_shap[0]),
+                'velocity': float(row_shap[1]),
+                'type_encoded': float(row_shap[2])
             }
             explanations.append(contributions)
             

@@ -35,6 +35,29 @@ apiV1.use("/alerts", alertRoutes);
 apiV1.use("/cases", caseRoutes);
 apiV1.use("/audit", auditRoutes);
 apiV1.get("/agents/:agentId/overview", authenticate, getAgentOverview);
+apiV1.get("/agents/:agentId/liquidity", authenticate, async (req, res, next) => {
+  try {
+    const { query: dbQuery } = await import("./database/database.module.js");
+    const result = await dbQuery(
+      `SELECT
+         date_trunc('hour', t.time) AS hour,
+         SUM(CASE WHEN t.type = 'cash_in' OR t.type = 'buy_float' THEN t.amount ELSE 0 END) AS inflow,
+         SUM(CASE WHEN t.type = 'cash_out' OR t.type = 'p2p' THEN t.amount ELSE 0 END) AS outflow
+       FROM transactions t
+       WHERE t.time > NOW() - INTERVAL '24 hours'
+       GROUP BY hour ORDER BY hour`,
+      [],
+      req.providerContext
+    );
+    const series = result.rows.map((r) => ({
+      time: r.hour,
+      inflow: Number(r.inflow || 0),
+      outflow: Number(r.outflow || 0),
+      net: Number(r.inflow || 0) - Number(r.outflow || 0),
+    }));
+    res.json({ agentId: req.params.agentId, series });
+  } catch (err) { next(err); }
+});
 
 app.use("/api/v1", apiV1);
 

@@ -1,0 +1,1663 @@
+[
+  {
+    "agent_id": "Nusrat Digital Center",
+    "request_payload_summary": "20 txns",
+    "analytics_response": {
+      "agent_id": "Nusrat Digital Center",
+      "alerts": [
+        {
+          "alert_id": "5a124f04-5942-4695-8e33-4ddfdfc262c8",
+          "agent_id": "Nusrat Digital Center",
+          "provider": "nagad",
+          "alert_type": "liquidity_emoney",
+          "risk_level": "Critical",
+          "message_en": "High liquidity pressure detected. Burn rate is 100.0%.",
+          "message_bn": "অতিরিক্ত তারল্য চাপ সনাক্ত হয়েছে। বার্ন রেট 100.0%।",
+          "message_banglish": "Oti-rikto liquidity pressure paowa geche. Burn rate 100.0%.",
+          "recommended_action": "Agent should arrange more funds or contact field officer.",
+          "evidence_details": {
+            "type": "liquidity_emoney",
+            "provider": "nagad",
+            "burn_rate": 1.0,
+            "risk_level": "Critical",
+            "current_balance": 50000.0,
+            "demand_1h": 67722.9
+          },
+          "confidence_level": "High Confidence",
+          "timestamp": "2026-07-11T23:28:14.208745Z"
+        },
+        {
+          "alert_id": "c16ee064-9f82-423f-8f1a-03e9dc94af62",
+          "agent_id": "Nusrat Digital Center",
+          "provider": null,
+          "alert_type": "liquidity_physical_cash",
+          "risk_level": "High",
+          "message_en": "High liquidity pressure detected. Burn rate is 26.8%.",
+          "message_bn": "অতিরিক্ত তারল্য চাপ সনাক্ত হয়েছে। বার্ন রেট 26.8%।",
+          "message_banglish": "Oti-rikto liquidity pressure paowa geche. Burn rate 26.8%.",
+          "recommended_action": "Agent should arrange more funds or contact field officer.",
+          "evidence_details": {
+            "type": "liquidity_physical_cash",
+            "provider": null,
+            "burn_rate": 0.2678758,
+            "risk_level": "High",
+            "current_balance": 100000.0,
+            "demand_1h": 26787.58
+          },
+          "confidence_level": "High Confidence",
+          "timestamp": "2026-07-11T23:28:14.208796Z"
+        }
+      ],
+      "data_quality_score": 1.0,
+      "analysis_timestamp": "2026-07-11T23:28:14.208809Z"
+    }
+  },
+  {
+    "agent_id": "Abdul Cash Point",
+    "request_payload_summary": "18 txns",
+    "analytics_response": {
+      "agent_id": "Abdul Cash Point",
+      "alerts": [
+        {
+          "alert_id": "72561dc4-2a03-4b38-aee0-48a7b05af123",
+          "agent_id": "Abdul Cash Point",
+          "provider": "bkash",
+          "alert_type": "liquidity_emoney",
+          "risk_level": "Critical",
+          "message_en": "High liquidity pressure detected. Burn rate is 66.0%.",
+          "message_bn": "অতিরিক্ত তারল্য চাপ সনাক্ত হয়েছে। বার্ন রেট 66.0%।",
+          "message_banglish": "Oti-rikto liquidity pressure paowa geche. Burn rate 66.0%.",
+          "recommended_action": "Agent should arrange more funds or contact field officer.",
+          "evidence_details": {
+            "type": "liquidity_emoney",
+            "provider": "bkash",
+            "burn_rate": 0.6598688,
+            "risk_level": "Critical",
+            "current_balance": 50000.0,
+            "demand_1h": 32993.44
+          },
+          "confidence_level": "High Confidence",
+          "timestamp": "2026-07-11T23:28:16.283610Z"
+        },
+        {
+          "alert_id": "1e137a99-ea54-4b7a-aede-3e1f3f03b5bc",
+          "agent_id": "Abdul Cash Point",
+          "provider": "nagad",
+          "alert_type": "liquidity_emoney",
+          "risk_level": "High",
+          "message_en": "High liquidity pressure detected. Burn rate is 22.3%.",
+          "message_bn": "অতিরিক্ত তারল্য চাপ সনাক্ত হয়েছে। বার্ন রেট 22.3%।",
+          "message_banglish": "Oti-rikto liquidity pressure paowa geche. Burn rate 22.3%.",
+          "recommended_action": "Agent should arrange more funds or contact field officer.",
+          "evidence_details": {
+            "type": "liquidity_emoney",
+            "provider": "nagad",
+            "burn_rate": 0.2230064,
+            "risk_level": "High",
+            "current_balance": 50000.0,
+            "demand_1h": 11150.32
+          },
+          "confidence_level": "High Confidence",
+          "timestamp": "2026-07-11T23:28:16.283673Z"
+        },
+        {
+          "alert_id": "11e4a542-44f0-42fd-aa73-7013b2acfac2",
+          "agent_id": "Abdul Cash Point",
+          "provider": null,
+          "alert_type": "liquidity_physical_cash",
+          "risk_level": "High",
+          "message_en": "High liquidity pressure detected. Burn rate is 34.1%.",
+          "message_bn": "অতিরিক্ত তারল্য চাপ সনাক্ত হয়েছে। বার্ন রেট 34.1%।",
+          "message_banglish": "Oti-rikto liquidity pressure paowa geche. Burn rate 34.1%.",
+          "recommended_action": "Agent should arrange more funds or contact field officer.",
+          "evidence_details": {
+            "type": "liquidity_physical_cash",
+            "provider": null,
+            "burn_rate": 0.3406216,
+            "risk_level": "High",
+            "current_balance": 100000.0,
+            "demand_1h": 34062.16
+          },
+          "confidence_level": "High Confidence",
+          "timestamp": "2026-07-11T23:28:16.283770Z"
+        }
+      ],
+      "data_quality_score": 1.0,
+      "analysis_timestamp": "2026-07-11T23:28:16.283787Z"
+    }
+  },
+  {
+    "agent_id": "Imran Communication",
+    "request_payload_summary": "16 txns",
+    "analytics_response": {
+      "agent_id": "Imran Communication",
+      "alerts": [
+        {
+          "alert_id": "a8c4b0d9-9ad1-4e54-9d9b-41390b9f869d",
+          "agent_id": "Imran Communication",
+          "provider": "nagad",
+          "alert_type": "liquidity_emoney",
+          "risk_level": "Critical",
+          "message_en": "High liquidity pressure detected. Burn rate is 100.0%.",
+          "message_bn": "অতিরিক্ত তারল্য চাপ সনাক্ত হয়েছে। বার্ন রেট 100.0%।",
+          "message_banglish": "Oti-rikto liquidity pressure paowa geche. Burn rate 100.0%.",
+          "recommended_action": "Agent should arrange more funds or contact field officer.",
+          "evidence_details": {
+            "type": "liquidity_emoney",
+            "provider": "nagad",
+            "burn_rate": 1.0,
+            "risk_level": "Critical",
+            "current_balance": 50000.0,
+            "demand_1h": 133228.2
+          },
+          "confidence_level": "High Confidence",
+          "timestamp": "2026-07-11T23:28:18.375219Z"
+        },
+        {
+          "alert_id": "99273375-76e0-411b-908e-f8429c982728",
+          "agent_id": "Imran Communication",
+          "provider": null,
+          "alert_type": "liquidity_physical_cash",
+          "risk_level": "Critical",
+          "message_en": "High liquidity pressure detected. Burn rate is 73.1%.",
+          "message_bn": "অতিরিক্ত তারল্য চাপ সনাক্ত হয়েছে। বার্ন রেট 73.1%।",
+          "message_banglish": "Oti-rikto liquidity pressure paowa geche. Burn rate 73.1%.",
+          "recommended_action": "Agent should arrange more funds or contact field officer.",
+          "evidence_details": {
+            "type": "liquidity_physical_cash",
+            "provider": null,
+            "burn_rate": 0.7308308,
+            "risk_level": "Critical",
+            "current_balance": 100000.0,
+            "demand_1h": 73083.08
+          },
+          "confidence_level": "High Confidence",
+          "timestamp": "2026-07-11T23:28:18.375287Z"
+        }
+      ],
+      "data_quality_score": 1.0,
+      "analysis_timestamp": "2026-07-11T23:28:18.375303Z"
+    }
+  },
+  {
+    "agent_id": "Habib Telecom",
+    "request_payload_summary": "18 txns",
+    "analytics_response": {
+      "agent_id": "Habib Telecom",
+      "alerts": [
+        {
+          "alert_id": "c3c769c1-088d-4154-a1fd-822973390134",
+          "agent_id": "Habib Telecom",
+          "provider": "nagad",
+          "alert_type": "liquidity_emoney",
+          "risk_level": "Warning",
+          "message_en": "High liquidity pressure detected. Burn rate is 11.1%.",
+          "message_bn": "অতিরিক্ত তারল্য চাপ সনাক্ত হয়েছে। বার্ন রেট 11.1%।",
+          "message_banglish": "Oti-rikto liquidity pressure paowa geche. Burn rate 11.1%.",
+          "recommended_action": "Agent should arrange more funds or contact field officer.",
+          "evidence_details": {
+            "type": "liquidity_emoney",
+            "provider": "nagad",
+            "burn_rate": 0.11106200000000001,
+            "risk_level": "Warning",
+            "current_balance": 50000.0,
+            "demand_1h": 5553.1
+          },
+          "confidence_level": "High Confidence",
+          "timestamp": "2026-07-11T23:28:20.450094Z"
+        },
+        {
+          "alert_id": "c53bb396-421e-4b33-abe9-1c0f315dc3d5",
+          "agent_id": "Habib Telecom",
+          "provider": "rocket",
+          "alert_type": "liquidity_emoney",
+          "risk_level": "Critical",
+          "message_en": "High liquidity pressure detected. Burn rate is 100.0%.",
+          "message_bn": "অতিরিক্ত তারল্য চাপ সনাক্ত হয়েছে। বার্ন রেট 100.0%।",
+          "message_banglish": "Oti-rikto liquidity pressure paowa geche. Burn rate 100.0%.",
+          "recommended_action": "Agent should arrange more funds or contact field officer.",
+          "evidence_details": {
+            "type": "liquidity_emoney",
+            "provider": "rocket",
+            "burn_rate": 1.0,
+            "risk_level": "Critical",
+            "current_balance": 50000.0,
+            "demand_1h": 60258.64
+          },
+          "confidence_level": "High Confidence",
+          "timestamp": "2026-07-11T23:28:20.450144Z"
+        },
+        {
+          "alert_id": "d87d82ff-d784-4623-9eec-18fcc8967d27",
+          "agent_id": "Habib Telecom",
+          "provider": null,
+          "alert_type": "liquidity_physical_cash",
+          "risk_level": "High",
+          "message_en": "High liquidity pressure detected. Burn rate is 25.4%.",
+          "message_bn": "অতিরিক্ত তারল্য চাপ সনাক্ত হয়েছে। বার্ন রেট 25.4%।",
+          "message_banglish": "Oti-rikto liquidity pressure paowa geche. Burn rate 25.4%.",
+          "recommended_action": "Agent should arrange more funds or contact field officer.",
+          "evidence_details": {
+            "type": "liquidity_physical_cash",
+            "provider": null,
+            "burn_rate": 0.254134,
+            "risk_level": "High",
+            "current_balance": 100000.0,
+            "demand_1h": 25413.4
+          },
+          "confidence_level": "High Confidence",
+          "timestamp": "2026-07-11T23:28:20.450167Z"
+        },
+        {
+          "alert_id": "df358be5-ec72-466f-b0a6-d557454662cc",
+          "agent_id": "Habib Telecom",
+          "provider": "nagad",
+          "alert_type": "anomaly_high_value",
+          "risk_level": "Medium",
+          "message_en": "Unusual transaction pattern detected: Max Z-Score of 2.30 detected.",
+          "message_bn": "অস্বাভাবিক লেনদেনের ধরন সনাক্ত হয়েছে। পর্যালোচনা প্রয়োজন।",
+          "message_banglish": "Oshavabik transaction pattern dekha geche. Review kora dorkar.",
+          "recommended_action": "Risk team to review recent transactions for this provider.",
+          "evidence_details": {
+            "type": "anomaly_high_value",
+            "provider": "nagad",
+            "risk_level": "Medium",
+            "evidence": "Max Z-Score of 2.30 detected.",
+            "evidence_details": {
+              "transaction_ids": [
+                "a02b3126-b43c-4ff0-bc03-ebfb84830307"
+              ],
+              "z_scores": [
+                2.2973602966002504
+              ]
+            },
+            "confidence_override": "Low Confidence"
+          },
+          "confidence_level": "Low Confidence",
+          "timestamp": "2026-07-11T23:28:20.450184Z"
+        }
+      ],
+      "data_quality_score": 1.0,
+      "analysis_timestamp": "2026-07-11T23:28:20.450194Z"
+    }
+  },
+  {
+    "agent_id": "Fatema Electronics",
+    "request_payload_summary": "6 txns",
+    "analytics_response": {
+      "agent_id": "Fatema Electronics",
+      "alerts": [
+        {
+          "alert_id": "ba09e096-c926-425f-932e-2fdea45d5f83",
+          "agent_id": "Fatema Electronics",
+          "provider": null,
+          "alert_type": "liquidity_physical_cash",
+          "risk_level": "Warning",
+          "message_en": "High liquidity pressure detected. Burn rate is 11.4%.",
+          "message_bn": "অতিরিক্ত তারল্য চাপ সনাক্ত হয়েছে। বার্ন রেট 11.4%।",
+          "message_banglish": "Oti-rikto liquidity pressure paowa geche. Burn rate 11.4%.",
+          "recommended_action": "Agent should arrange more funds or contact field officer.",
+          "evidence_details": {
+            "type": "liquidity_physical_cash",
+            "provider": null,
+            "burn_rate": 0.114448,
+            "risk_level": "Warning",
+            "current_balance": 100000.0,
+            "demand_1h": 11444.8
+          },
+          "confidence_level": "High Confidence",
+          "timestamp": "2026-07-11T23:28:22.483199Z"
+        }
+      ],
+      "data_quality_score": 1.0,
+      "analysis_timestamp": "2026-07-11T23:28:22.483229Z"
+    }
+  },
+  {
+    "agent_id": "Rina Gift House",
+    "request_payload_summary": "8 txns",
+    "analytics_response": {
+      "agent_id": "Rina Gift House",
+      "alerts": [
+        {
+          "alert_id": "d4cd8632-3de5-44a1-9327-8bfc203bed23",
+          "agent_id": "Rina Gift House",
+          "provider": "rocket",
+          "alert_type": "liquidity_emoney",
+          "risk_level": "Critical",
+          "message_en": "High liquidity pressure detected. Burn rate is 100.0%.",
+          "message_bn": "অতিরিক্ত তারল্য চাপ সনাক্ত হয়েছে। বার্ন রেট 100.0%।",
+          "message_banglish": "Oti-rikto liquidity pressure paowa geche. Burn rate 100.0%.",
+          "recommended_action": "Agent should arrange more funds or contact field officer.",
+          "evidence_details": {
+            "type": "liquidity_emoney",
+            "provider": "rocket",
+            "burn_rate": 1.0,
+            "risk_level": "Critical",
+            "current_balance": 50000.0,
+            "demand_1h": 84149.6
+          },
+          "confidence_level": "High Confidence",
+          "timestamp": "2026-07-11T23:28:24.563052Z"
+        },
+        {
+          "alert_id": "14b509ba-616d-4e14-a177-36805d06f819",
+          "agent_id": "Rina Gift House",
+          "provider": null,
+          "alert_type": "liquidity_physical_cash",
+          "risk_level": "Critical",
+          "message_en": "High liquidity pressure detected. Burn rate is 46.1%.",
+          "message_bn": "অতিরিক্ত তারল্য চাপ সনাক্ত হয়েছে। বার্ন রেট 46.1%।",
+          "message_banglish": "Oti-rikto liquidity pressure paowa geche. Burn rate 46.1%.",
+          "recommended_action": "Agent should arrange more funds or contact field officer.",
+          "evidence_details": {
+            "type": "liquidity_physical_cash",
+            "provider": null,
+            "burn_rate": 0.4605012,
+            "risk_level": "Critical",
+            "current_balance": 100000.0,
+            "demand_1h": 46050.12
+          },
+          "confidence_level": "High Confidence",
+          "timestamp": "2026-07-11T23:28:24.563094Z"
+        }
+      ],
+      "data_quality_score": 1.0,
+      "analysis_timestamp": "2026-07-11T23:28:24.563102Z"
+    }
+  },
+  {
+    "agent_id": "Momena Bazar",
+    "request_payload_summary": "6 txns",
+    "analytics_response": {
+      "agent_id": "Momena Bazar",
+      "alerts": [
+        {
+          "alert_id": "2bcb73aa-d4cc-4e16-a1fe-150e22b45605",
+          "agent_id": "Momena Bazar",
+          "provider": "rocket",
+          "alert_type": "liquidity_emoney",
+          "risk_level": "Critical",
+          "message_en": "High liquidity pressure detected. Burn rate is 36.5%.",
+          "message_bn": "অতিরিক্ত তারল্য চাপ সনাক্ত হয়েছে। বার্ন রেট 36.5%।",
+          "message_banglish": "Oti-rikto liquidity pressure paowa geche. Burn rate 36.5%.",
+          "recommended_action": "Agent should arrange more funds or contact field officer.",
+          "evidence_details": {
+            "type": "liquidity_emoney",
+            "provider": "rocket",
+            "burn_rate": 0.3648704,
+            "risk_level": "Critical",
+            "current_balance": 50000.0,
+            "demand_1h": 18243.52
+          },
+          "confidence_level": "High Confidence",
+          "timestamp": "2026-07-11T23:28:26.627346Z"
+        },
+        {
+          "alert_id": "f631426a-5415-499f-9a33-ae686d226d68",
+          "agent_id": "Momena Bazar",
+          "provider": null,
+          "alert_type": "liquidity_physical_cash",
+          "risk_level": "Warning",
+          "message_en": "High liquidity pressure detected. Burn rate is 12.1%.",
+          "message_bn": "অতিরিক্ত তারল্য চাপ সনাক্ত হয়েছে। বার্ন রেট 12.1%।",
+          "message_banglish": "Oti-rikto liquidity pressure paowa geche. Burn rate 12.1%.",
+          "recommended_action": "Agent should arrange more funds or contact field officer.",
+          "evidence_details": {
+            "type": "liquidity_physical_cash",
+            "provider": null,
+            "burn_rate": 0.1209708,
+            "risk_level": "Warning",
+            "current_balance": 100000.0,
+            "demand_1h": 12097.08
+          },
+          "confidence_level": "High Confidence",
+          "timestamp": "2026-07-11T23:28:26.627389Z"
+        }
+      ],
+      "data_quality_score": 1.0,
+      "analysis_timestamp": "2026-07-11T23:28:26.627398Z"
+    }
+  },
+  {
+    "agent_id": "Anwar Digital Point",
+    "request_payload_summary": "19 txns",
+    "analytics_response": {
+      "agent_id": "Anwar Digital Point",
+      "alerts": [
+        {
+          "alert_id": "67c1f5c5-27cd-4414-8159-0bf9f890bdf2",
+          "agent_id": "Anwar Digital Point",
+          "provider": "nagad",
+          "alert_type": "liquidity_emoney",
+          "risk_level": "Critical",
+          "message_en": "High liquidity pressure detected. Burn rate is 100.0%.",
+          "message_bn": "অতিরিক্ত তারল্য চাপ সনাক্ত হয়েছে। বার্ন রেট 100.0%।",
+          "message_banglish": "Oti-rikto liquidity pressure paowa geche. Burn rate 100.0%.",
+          "recommended_action": "Agent should arrange more funds or contact field officer.",
+          "evidence_details": {
+            "type": "liquidity_emoney",
+            "provider": "nagad",
+            "burn_rate": 1.0,
+            "risk_level": "Critical",
+            "current_balance": 50000.0,
+            "demand_1h": 71684.56
+          },
+          "confidence_level": "High Confidence",
+          "timestamp": "2026-07-11T23:28:28.705538Z"
+        },
+        {
+          "alert_id": "85e0780e-d173-436b-8834-ddc9984f449f",
+          "agent_id": "Anwar Digital Point",
+          "provider": "rocket",
+          "alert_type": "liquidity_emoney",
+          "risk_level": "Critical",
+          "message_en": "High liquidity pressure detected. Burn rate is 100.0%.",
+          "message_bn": "অতিরিক্ত তারল্য চাপ সনাক্ত হয়েছে। বার্ন রেট 100.0%।",
+          "message_banglish": "Oti-rikto liquidity pressure paowa geche. Burn rate 100.0%.",
+          "recommended_action": "Agent should arrange more funds or contact field officer.",
+          "evidence_details": {
+            "type": "liquidity_emoney",
+            "provider": "rocket",
+            "burn_rate": 1.0,
+            "risk_level": "Critical",
+            "current_balance": 50000.0,
+            "demand_1h": 92379.44
+          },
+          "confidence_level": "High Confidence",
+          "timestamp": "2026-07-11T23:28:28.705581Z"
+        },
+        {
+          "alert_id": "617e3fcd-d3d0-44dd-ab08-56a6bb4bb85d",
+          "agent_id": "Anwar Digital Point",
+          "provider": null,
+          "alert_type": "liquidity_physical_cash",
+          "risk_level": "Critical",
+          "message_en": "High liquidity pressure detected. Burn rate is 50.6%.",
+          "message_bn": "অতিরিক্ত তারল্য চাপ সনাক্ত হয়েছে। বার্ন রেট 50.6%।",
+          "message_banglish": "Oti-rikto liquidity pressure paowa geche. Burn rate 50.6%.",
+          "recommended_action": "Agent should arrange more funds or contact field officer.",
+          "evidence_details": {
+            "type": "liquidity_physical_cash",
+            "provider": null,
+            "burn_rate": 0.5064516,
+            "risk_level": "Critical",
+            "current_balance": 100000.0,
+            "demand_1h": 50645.159999999996
+          },
+          "confidence_level": "High Confidence",
+          "timestamp": "2026-07-11T23:28:28.705600Z"
+        },
+        {
+          "alert_id": "08346be7-c8ac-4309-922f-ca1c9e16075e",
+          "agent_id": "Anwar Digital Point",
+          "provider": "bkash",
+          "alert_type": "anomaly_high_value",
+          "risk_level": "Medium",
+          "message_en": "Unusual transaction pattern detected: Max Z-Score of 2.14 detected.",
+          "message_bn": "অস্বাভাবিক লেনদেনের ধরন সনাক্ত হয়েছে। পর্যালোচনা প্রয়োজন।",
+          "message_banglish": "Oshavabik transaction pattern dekha geche. Review kora dorkar.",
+          "recommended_action": "Risk team to review recent transactions for this provider.",
+          "evidence_details": {
+            "type": "anomaly_high_value",
+            "provider": "bkash",
+            "risk_level": "Medium",
+            "evidence": "Max Z-Score of 2.14 detected.",
+            "evidence_details": {
+              "transaction_ids": [
+                "4395cd80-fd34-479a-b532-1a0e5937e9f7"
+              ],
+              "z_scores": [
+                2.140559724557137
+              ]
+            },
+            "confidence_override": "Low Confidence"
+          },
+          "confidence_level": "Low Confidence",
+          "timestamp": "2026-07-11T23:28:28.705613Z"
+        },
+        {
+          "alert_id": "b09583e5-704e-458f-a754-b04aa767f269",
+          "agent_id": "Anwar Digital Point",
+          "provider": "rocket",
+          "alert_type": "anomaly_high_value",
+          "risk_level": "Medium",
+          "message_en": "Unusual transaction pattern detected: Max Z-Score of 2.08 detected.",
+          "message_bn": "অস্বাভাবিক লেনদেনের ধরন সনাক্ত হয়েছে। পর্যালোচনা প্রয়োজন।",
+          "message_banglish": "Oshavabik transaction pattern dekha geche. Review kora dorkar.",
+          "recommended_action": "Risk team to review recent transactions for this provider.",
+          "evidence_details": {
+            "type": "anomaly_high_value",
+            "provider": "rocket",
+            "risk_level": "Medium",
+            "evidence": "Max Z-Score of 2.08 detected.",
+            "evidence_details": {
+              "transaction_ids": [
+                "4a993b02-bd8a-4135-99ad-4c217906426a"
+              ],
+              "z_scores": [
+                2.0756676123015447
+              ]
+            },
+            "confidence_override": "Low Confidence"
+          },
+          "confidence_level": "Low Confidence",
+          "timestamp": "2026-07-11T23:28:28.705623Z"
+        }
+      ],
+      "data_quality_score": 1.0,
+      "analysis_timestamp": "2026-07-11T23:28:28.705629Z"
+    }
+  },
+  {
+    "agent_id": "Shireen Mobile Shop",
+    "request_payload_summary": "10 txns",
+    "analytics_response": {
+      "agent_id": "Shireen Mobile Shop",
+      "alerts": [
+        {
+          "alert_id": "05e8d95b-9ad2-4f17-b691-83cfee3fa94b",
+          "agent_id": "Shireen Mobile Shop",
+          "provider": null,
+          "alert_type": "liquidity_physical_cash",
+          "risk_level": "Critical",
+          "message_en": "High liquidity pressure detected. Burn rate is 100.0%.",
+          "message_bn": "অতিরিক্ত তারল্য চাপ সনাক্ত হয়েছে। বার্ন রেট 100.0%।",
+          "message_banglish": "Oti-rikto liquidity pressure paowa geche. Burn rate 100.0%.",
+          "recommended_action": "Agent should arrange more funds or contact field officer.",
+          "evidence_details": {
+            "type": "liquidity_physical_cash",
+            "provider": null,
+            "burn_rate": 1.0,
+            "risk_level": "Critical",
+            "current_balance": 100000.0,
+            "demand_1h": 129069.1
+          },
+          "confidence_level": "High Confidence",
+          "timestamp": "2026-07-11T23:28:30.784884Z"
+        }
+      ],
+      "data_quality_score": 1.0,
+      "analysis_timestamp": "2026-07-11T23:28:30.784914Z"
+    }
+  },
+  {
+    "agent_id": "Alamgir Cash Center",
+    "request_payload_summary": "14 txns",
+    "analytics_response": {
+      "agent_id": "Alamgir Cash Center",
+      "alerts": [
+        {
+          "alert_id": "6d70649f-b84a-417d-8880-3645f5a47ca0",
+          "agent_id": "Alamgir Cash Center",
+          "provider": "nagad",
+          "alert_type": "liquidity_emoney",
+          "risk_level": "Critical",
+          "message_en": "High liquidity pressure detected. Burn rate is 40.0%.",
+          "message_bn": "অতিরিক্ত তারল্য চাপ সনাক্ত হয়েছে। বার্ন রেট 40.0%।",
+          "message_banglish": "Oti-rikto liquidity pressure paowa geche. Burn rate 40.0%.",
+          "recommended_action": "Agent should arrange more funds or contact field officer.",
+          "evidence_details": {
+            "type": "liquidity_emoney",
+            "provider": "nagad",
+            "burn_rate": 0.40019569396972654,
+            "risk_level": "Critical",
+            "current_balance": 50000.0,
+            "demand_1h": 20009.784698486328
+          },
+          "confidence_level": "High Confidence",
+          "timestamp": "2026-07-11T23:28:32.872629Z"
+        },
+        {
+          "alert_id": "dad12079-28dd-4af5-8bc3-b6c49b0350c2",
+          "agent_id": "Alamgir Cash Center",
+          "provider": "rocket",
+          "alert_type": "liquidity_emoney",
+          "risk_level": "Critical",
+          "message_en": "High liquidity pressure detected. Burn rate is 100.0%.",
+          "message_bn": "অতিরিক্ত তারল্য চাপ সনাক্ত হয়েছে। বার্ন রেট 100.0%।",
+          "message_banglish": "Oti-rikto liquidity pressure paowa geche. Burn rate 100.0%.",
+          "recommended_action": "Agent should arrange more funds or contact field officer.",
+          "evidence_details": {
+            "type": "liquidity_emoney",
+            "provider": "rocket",
+            "burn_rate": 1.0,
+            "risk_level": "Critical",
+            "current_balance": 50000.0,
+            "demand_1h": 121808.76
+          },
+          "confidence_level": "High Confidence",
+          "timestamp": "2026-07-11T23:28:32.872688Z"
+        },
+        {
+          "alert_id": "982feb3d-fba9-4e8e-993a-5b7956a8109c",
+          "agent_id": "Alamgir Cash Center",
+          "provider": null,
+          "alert_type": "liquidity_physical_cash",
+          "risk_level": "Critical",
+          "message_en": "High liquidity pressure detected. Burn rate is 78.5%.",
+          "message_bn": "অতিরিক্ত তারল্য চাপ সনাক্ত হয়েছে। বার্ন রেট 78.5%।",
+          "message_banglish": "Oti-rikto liquidity pressure paowa geche. Burn rate 78.5%.",
+          "recommended_action": "Agent should arrange more funds or contact field officer.",
+          "evidence_details": {
+            "type": "liquidity_physical_cash",
+            "provider": null,
+            "burn_rate": 0.7849233999999999,
+            "risk_level": "Critical",
+            "current_balance": 100000.0,
+            "demand_1h": 78492.34
+          },
+          "confidence_level": "High Confidence",
+          "timestamp": "2026-07-11T23:28:32.872721Z"
+        },
+        {
+          "alert_id": "b56a6be1-4518-45aa-8858-fc72dda9eef1",
+          "agent_id": "Alamgir Cash Center",
+          "provider": "nagad",
+          "alert_type": "anomaly_high_value",
+          "risk_level": "Medium",
+          "message_en": "Unusual transaction pattern detected: Max Z-Score of 2.59 detected.",
+          "message_bn": "অস্বাভাবিক লেনদেনের ধরন সনাক্ত হয়েছে। পর্যালোচনা প্রয়োজন।",
+          "message_banglish": "Oshavabik transaction pattern dekha geche. Review kora dorkar.",
+          "recommended_action": "Risk team to review recent transactions for this provider.",
+          "evidence_details": {
+            "type": "anomaly_high_value",
+            "provider": "nagad",
+            "risk_level": "Medium",
+            "evidence": "Max Z-Score of 2.59 detected.",
+            "evidence_details": {
+              "transaction_ids": [
+                "31262af3-dac3-48a5-8703-47c78204c79f"
+              ],
+              "z_scores": [
+                2.5912440536288197
+              ]
+            },
+            "confidence_override": "Low Confidence"
+          },
+          "confidence_level": "Low Confidence",
+          "timestamp": "2026-07-11T23:28:32.872741Z"
+        }
+      ],
+      "data_quality_score": 1.0,
+      "analysis_timestamp": "2026-07-11T23:28:32.872752Z"
+    }
+  },
+  {
+    "agent_id": "Rubina Electronics",
+    "request_payload_summary": "8 txns",
+    "analytics_response": {
+      "agent_id": "Rubina Electronics",
+      "alerts": [
+        {
+          "alert_id": "42de0eb6-20e3-49a5-90e1-a0c77e6fafe0",
+          "agent_id": "Rubina Electronics",
+          "provider": "bkash",
+          "alert_type": "liquidity_emoney",
+          "risk_level": "Critical",
+          "message_en": "High liquidity pressure detected. Burn rate is 100.0%.",
+          "message_bn": "অতিরিক্ত তারল্য চাপ সনাক্ত হয়েছে। বার্ন রেট 100.0%।",
+          "message_banglish": "Oti-rikto liquidity pressure paowa geche. Burn rate 100.0%.",
+          "recommended_action": "Agent should arrange more funds or contact field officer.",
+          "evidence_details": {
+            "type": "liquidity_emoney",
+            "provider": "bkash",
+            "burn_rate": 1.0,
+            "risk_level": "Critical",
+            "current_balance": 50000.0,
+            "demand_1h": 63563.54
+          },
+          "confidence_level": "High Confidence",
+          "timestamp": "2026-07-11T23:28:34.924109Z"
+        },
+        {
+          "alert_id": "2233d077-13eb-4a14-b046-2d0d029971bc",
+          "agent_id": "Rubina Electronics",
+          "provider": "nagad",
+          "alert_type": "liquidity_emoney",
+          "risk_level": "Critical",
+          "message_en": "High liquidity pressure detected. Burn rate is 100.0%.",
+          "message_bn": "অতিরিক্ত তারল্য চাপ সনাক্ত হয়েছে। বার্ন রেট 100.0%।",
+          "message_banglish": "Oti-rikto liquidity pressure paowa geche. Burn rate 100.0%.",
+          "recommended_action": "Agent should arrange more funds or contact field officer.",
+          "evidence_details": {
+            "type": "liquidity_emoney",
+            "provider": "nagad",
+            "burn_rate": 1.0,
+            "risk_level": "Critical",
+            "current_balance": 50000.0,
+            "demand_1h": 78497.08
+          },
+          "confidence_level": "High Confidence",
+          "timestamp": "2026-07-11T23:28:34.924147Z"
+        }
+      ],
+      "data_quality_score": 1.0,
+      "analysis_timestamp": "2026-07-11T23:28:34.924155Z"
+    }
+  },
+  {
+    "agent_id": "Karim Telecom",
+    "request_payload_summary": "11 txns",
+    "analytics_response": {
+      "agent_id": "Karim Telecom",
+      "alerts": [
+        {
+          "alert_id": "103984b7-ff4b-415f-b897-74078e21720e",
+          "agent_id": "Karim Telecom",
+          "provider": "nagad",
+          "alert_type": "liquidity_emoney",
+          "risk_level": "Critical",
+          "message_en": "High liquidity pressure detected. Burn rate is 100.0%.",
+          "message_bn": "অতিরিক্ত তারল্য চাপ সনাক্ত হয়েছে। বার্ন রেট 100.0%।",
+          "message_banglish": "Oti-rikto liquidity pressure paowa geche. Burn rate 100.0%.",
+          "recommended_action": "Agent should arrange more funds or contact field officer.",
+          "evidence_details": {
+            "type": "liquidity_emoney",
+            "provider": "nagad",
+            "burn_rate": 1.0,
+            "risk_level": "Critical",
+            "current_balance": 50000.0,
+            "demand_1h": 142187.68
+          },
+          "confidence_level": "High Confidence",
+          "timestamp": "2026-07-11T23:28:37.007559Z"
+        },
+        {
+          "alert_id": "e449ee8c-fe57-41d2-bf1b-9646bb1a6491",
+          "agent_id": "Karim Telecom",
+          "provider": null,
+          "alert_type": "liquidity_physical_cash",
+          "risk_level": "Warning",
+          "message_en": "High liquidity pressure detected. Burn rate is 11.7%.",
+          "message_bn": "অতিরিক্ত তারল্য চাপ সনাক্ত হয়েছে। বার্ন রেট 11.7%।",
+          "message_banglish": "Oti-rikto liquidity pressure paowa geche. Burn rate 11.7%.",
+          "recommended_action": "Agent should arrange more funds or contact field officer.",
+          "evidence_details": {
+            "type": "liquidity_physical_cash",
+            "provider": null,
+            "burn_rate": 0.1174756,
+            "risk_level": "Warning",
+            "current_balance": 100000.0,
+            "demand_1h": 11747.56
+          },
+          "confidence_level": "High Confidence",
+          "timestamp": "2026-07-11T23:28:37.007619Z"
+        }
+      ],
+      "data_quality_score": 1.0,
+      "analysis_timestamp": "2026-07-11T23:28:37.007632Z"
+    }
+  },
+  {
+    "agent_id": "Sultana Mobile Corner",
+    "request_payload_summary": "13 txns",
+    "analytics_response": {
+      "agent_id": "Sultana Mobile Corner",
+      "alerts": [
+        {
+          "alert_id": "7c7f3ffd-6149-4715-aa26-fe89f2f491fd",
+          "agent_id": "Sultana Mobile Corner",
+          "provider": "rocket",
+          "alert_type": "liquidity_emoney",
+          "risk_level": "High",
+          "message_en": "High liquidity pressure detected. Burn rate is 34.9%.",
+          "message_bn": "অতিরিক্ত তারল্য চাপ সনাক্ত হয়েছে। বার্ন রেট 34.9%।",
+          "message_banglish": "Oti-rikto liquidity pressure paowa geche. Burn rate 34.9%.",
+          "recommended_action": "Agent should arrange more funds or contact field officer.",
+          "evidence_details": {
+            "type": "liquidity_emoney",
+            "provider": "rocket",
+            "burn_rate": 0.34852720000000004,
+            "risk_level": "High",
+            "current_balance": 50000.0,
+            "demand_1h": 17426.36
+          },
+          "confidence_level": "High Confidence",
+          "timestamp": "2026-07-11T23:28:39.088875Z"
+        },
+        {
+          "alert_id": "faa32a30-5c49-42f7-a143-fc4cdd0ad63d",
+          "agent_id": "Sultana Mobile Corner",
+          "provider": null,
+          "alert_type": "liquidity_physical_cash",
+          "risk_level": "Warning",
+          "message_en": "High liquidity pressure detected. Burn rate is 12.5%.",
+          "message_bn": "অতিরিক্ত তারল্য চাপ সনাক্ত হয়েছে। বার্ন রেট 12.5%।",
+          "message_banglish": "Oti-rikto liquidity pressure paowa geche. Burn rate 12.5%.",
+          "recommended_action": "Agent should arrange more funds or contact field officer.",
+          "evidence_details": {
+            "type": "liquidity_physical_cash",
+            "provider": null,
+            "burn_rate": 0.1248672,
+            "risk_level": "Warning",
+            "current_balance": 100000.0,
+            "demand_1h": 12486.72
+          },
+          "confidence_level": "High Confidence",
+          "timestamp": "2026-07-11T23:28:39.088921Z"
+        },
+        {
+          "alert_id": "c1f49352-c401-4fb9-a9d0-f78ebd41b920",
+          "agent_id": "Sultana Mobile Corner",
+          "provider": "nagad",
+          "alert_type": "anomaly_high_value",
+          "risk_level": "Medium",
+          "message_en": "Unusual transaction pattern detected: Max Z-Score of 2.13 detected.",
+          "message_bn": "অস্বাভাবিক লেনদেনের ধরন সনাক্ত হয়েছে। পর্যালোচনা প্রয়োজন।",
+          "message_banglish": "Oshavabik transaction pattern dekha geche. Review kora dorkar.",
+          "recommended_action": "Risk team to review recent transactions for this provider.",
+          "evidence_details": {
+            "type": "anomaly_high_value",
+            "provider": "nagad",
+            "risk_level": "Medium",
+            "evidence": "Max Z-Score of 2.13 detected.",
+            "evidence_details": {
+              "transaction_ids": [
+                "fa163698-1b3e-40e0-8649-4e3cd1a76b51"
+              ],
+              "z_scores": [
+                2.130777480136657
+              ]
+            },
+            "confidence_override": "Low Confidence"
+          },
+          "confidence_level": "Low Confidence",
+          "timestamp": "2026-07-11T23:28:39.088938Z"
+        }
+      ],
+      "data_quality_score": 1.0,
+      "analysis_timestamp": "2026-07-11T23:28:39.088948Z"
+    }
+  },
+  {
+    "agent_id": "Kamrul General Store",
+    "request_payload_summary": "12 txns",
+    "analytics_response": {
+      "agent_id": "Kamrul General Store",
+      "alerts": [
+        {
+          "alert_id": "263b2182-11e4-4bb8-9711-ef4abf3d6518",
+          "agent_id": "Kamrul General Store",
+          "provider": "bkash",
+          "alert_type": "liquidity_emoney",
+          "risk_level": "High",
+          "message_en": "High liquidity pressure detected. Burn rate is 28.5%.",
+          "message_bn": "অতিরিক্ত তারল্য চাপ সনাক্ত হয়েছে। বার্ন রেট 28.5%।",
+          "message_banglish": "Oti-rikto liquidity pressure paowa geche. Burn rate 28.5%.",
+          "recommended_action": "Agent should arrange more funds or contact field officer.",
+          "evidence_details": {
+            "type": "liquidity_emoney",
+            "provider": "bkash",
+            "burn_rate": 0.2845616,
+            "risk_level": "High",
+            "current_balance": 50000.0,
+            "demand_1h": 14228.08
+          },
+          "confidence_level": "High Confidence",
+          "timestamp": "2026-07-11T23:28:41.151062Z"
+        },
+        {
+          "alert_id": "1b31a3f4-8fa5-4b29-aabf-bbfe72ce9ab7",
+          "agent_id": "Kamrul General Store",
+          "provider": "nagad",
+          "alert_type": "liquidity_emoney",
+          "risk_level": "Critical",
+          "message_en": "High liquidity pressure detected. Burn rate is 100.0%.",
+          "message_bn": "অতিরিক্ত তারল্য চাপ সনাক্ত হয়েছে। বার্ন রেট 100.0%।",
+          "message_banglish": "Oti-rikto liquidity pressure paowa geche. Burn rate 100.0%.",
+          "recommended_action": "Agent should arrange more funds or contact field officer.",
+          "evidence_details": {
+            "type": "liquidity_emoney",
+            "provider": "nagad",
+            "burn_rate": 1.0,
+            "risk_level": "Critical",
+            "current_balance": 50000.0,
+            "demand_1h": 63297.2
+          },
+          "confidence_level": "High Confidence",
+          "timestamp": "2026-07-11T23:28:41.151119Z"
+        },
+        {
+          "alert_id": "40c0060a-24d7-458c-bd82-75e0d78423c7",
+          "agent_id": "Kamrul General Store",
+          "provider": null,
+          "alert_type": "liquidity_physical_cash",
+          "risk_level": "Critical",
+          "message_en": "High liquidity pressure detected. Burn rate is 48.6%.",
+          "message_bn": "অতিরিক্ত তারল্য চাপ সনাক্ত হয়েছে। বার্ন রেট 48.6%।",
+          "message_banglish": "Oti-rikto liquidity pressure paowa geche. Burn rate 48.6%.",
+          "recommended_action": "Agent should arrange more funds or contact field officer.",
+          "evidence_details": {
+            "type": "liquidity_physical_cash",
+            "provider": null,
+            "burn_rate": 0.4862606,
+            "risk_level": "Critical",
+            "current_balance": 100000.0,
+            "demand_1h": 48626.06
+          },
+          "confidence_level": "High Confidence",
+          "timestamp": "2026-07-11T23:28:41.151147Z"
+        }
+      ],
+      "data_quality_score": 1.0,
+      "analysis_timestamp": "2026-07-11T23:28:41.151158Z"
+    }
+  },
+  {
+    "agent_id": "Hasan Mobile Recharge",
+    "request_payload_summary": "14 txns",
+    "analytics_response": {
+      "agent_id": "Hasan Mobile Recharge",
+      "alerts": [
+        {
+          "alert_id": "08fb8996-1424-4129-83de-6fba639f6798",
+          "agent_id": "Hasan Mobile Recharge",
+          "provider": "bkash",
+          "alert_type": "liquidity_emoney",
+          "risk_level": "Critical",
+          "message_en": "High liquidity pressure detected. Burn rate is 100.0%.",
+          "message_bn": "অতিরিক্ত তারল্য চাপ সনাক্ত হয়েছে। বার্ন রেট 100.0%।",
+          "message_banglish": "Oti-rikto liquidity pressure paowa geche. Burn rate 100.0%.",
+          "recommended_action": "Agent should arrange more funds or contact field officer.",
+          "evidence_details": {
+            "type": "liquidity_emoney",
+            "provider": "bkash",
+            "burn_rate": 1.0,
+            "risk_level": "Critical",
+            "current_balance": 50000.0,
+            "demand_1h": 107378.08
+          },
+          "confidence_level": "High Confidence",
+          "timestamp": "2026-07-11T23:28:43.247855Z"
+        },
+        {
+          "alert_id": "68836af8-7e34-4ec8-98f0-66cf5f25ff0c",
+          "agent_id": "Hasan Mobile Recharge",
+          "provider": "nagad",
+          "alert_type": "liquidity_emoney",
+          "risk_level": "Critical",
+          "message_en": "High liquidity pressure detected. Burn rate is 100.0%.",
+          "message_bn": "অতিরিক্ত তারল্য চাপ সনাক্ত হয়েছে। বার্ন রেট 100.0%।",
+          "message_banglish": "Oti-rikto liquidity pressure paowa geche. Burn rate 100.0%.",
+          "recommended_action": "Agent should arrange more funds or contact field officer.",
+          "evidence_details": {
+            "type": "liquidity_emoney",
+            "provider": "nagad",
+            "burn_rate": 1.0,
+            "risk_level": "Critical",
+            "current_balance": 50000.0,
+            "demand_1h": 189622.84
+          },
+          "confidence_level": "High Confidence",
+          "timestamp": "2026-07-11T23:28:43.247896Z"
+        },
+        {
+          "alert_id": "7f6c7bf7-6d8c-4fc9-91d3-593ef6910f24",
+          "agent_id": "Hasan Mobile Recharge",
+          "provider": null,
+          "alert_type": "liquidity_physical_cash",
+          "risk_level": "Critical",
+          "message_en": "High liquidity pressure detected. Burn rate is 100.0%.",
+          "message_bn": "অতিরিক্ত তারল্য চাপ সনাক্ত হয়েছে। বার্ন রেট 100.0%।",
+          "message_banglish": "Oti-rikto liquidity pressure paowa geche. Burn rate 100.0%.",
+          "recommended_action": "Agent should arrange more funds or contact field officer.",
+          "evidence_details": {
+            "type": "liquidity_physical_cash",
+            "provider": null,
+            "burn_rate": 1.0,
+            "risk_level": "Critical",
+            "current_balance": 100000.0,
+            "demand_1h": 115230.92
+          },
+          "confidence_level": "High Confidence",
+          "timestamp": "2026-07-11T23:28:43.247912Z"
+        }
+      ],
+      "data_quality_score": 1.0,
+      "analysis_timestamp": "2026-07-11T23:28:43.247918Z"
+    }
+  },
+  {
+    "agent_id": "Jahangir Electronics",
+    "request_payload_summary": "12 txns",
+    "analytics_response": {
+      "agent_id": "Jahangir Electronics",
+      "alerts": [
+        {
+          "alert_id": "436c40c5-9505-4d29-a9f5-338465d92962",
+          "agent_id": "Jahangir Electronics",
+          "provider": "nagad",
+          "alert_type": "liquidity_emoney",
+          "risk_level": "Critical",
+          "message_en": "High liquidity pressure detected. Burn rate is 100.0%.",
+          "message_bn": "অতিরিক্ত তারল্য চাপ সনাক্ত হয়েছে। বার্ন রেট 100.0%।",
+          "message_banglish": "Oti-rikto liquidity pressure paowa geche. Burn rate 100.0%.",
+          "recommended_action": "Agent should arrange more funds or contact field officer.",
+          "evidence_details": {
+            "type": "liquidity_emoney",
+            "provider": "nagad",
+            "burn_rate": 1.0,
+            "risk_level": "Critical",
+            "current_balance": 50000.0,
+            "demand_1h": 83653.68
+          },
+          "confidence_level": "High Confidence",
+          "timestamp": "2026-07-11T23:28:45.320274Z"
+        },
+        {
+          "alert_id": "8fa5e8cb-cf4c-44b8-9322-7caf163ab29d",
+          "agent_id": "Jahangir Electronics",
+          "provider": "rocket",
+          "alert_type": "liquidity_emoney",
+          "risk_level": "Critical",
+          "message_en": "High liquidity pressure detected. Burn rate is 100.0%.",
+          "message_bn": "অতিরিক্ত তারল্য চাপ সনাক্ত হয়েছে। বার্ন রেট 100.0%।",
+          "message_banglish": "Oti-rikto liquidity pressure paowa geche. Burn rate 100.0%.",
+          "recommended_action": "Agent should arrange more funds or contact field officer.",
+          "evidence_details": {
+            "type": "liquidity_emoney",
+            "provider": "rocket",
+            "burn_rate": 1.0,
+            "risk_level": "Critical",
+            "current_balance": 50000.0,
+            "demand_1h": 112498.48
+          },
+          "confidence_level": "High Confidence",
+          "timestamp": "2026-07-11T23:28:45.320322Z"
+        },
+        {
+          "alert_id": "68ab8ccc-f8be-4c8d-b250-c405400d27d0",
+          "agent_id": "Jahangir Electronics",
+          "provider": null,
+          "alert_type": "liquidity_physical_cash",
+          "risk_level": "Critical",
+          "message_en": "High liquidity pressure detected. Burn rate is 91.5%.",
+          "message_bn": "অতিরিক্ত তারল্য চাপ সনাক্ত হয়েছে। বার্ন রেট 91.5%।",
+          "message_banglish": "Oti-rikto liquidity pressure paowa geche. Burn rate 91.5%.",
+          "recommended_action": "Agent should arrange more funds or contact field officer.",
+          "evidence_details": {
+            "type": "liquidity_physical_cash",
+            "provider": null,
+            "burn_rate": 0.9154324,
+            "risk_level": "Critical",
+            "current_balance": 100000.0,
+            "demand_1h": 91543.24
+          },
+          "confidence_level": "High Confidence",
+          "timestamp": "2026-07-11T23:28:45.320354Z"
+        }
+      ],
+      "data_quality_score": 1.0,
+      "analysis_timestamp": "2026-07-11T23:28:45.320366Z"
+    }
+  },
+  {
+    "agent_id": "Tasnim Cyber Cafe",
+    "request_payload_summary": "11 txns",
+    "analytics_response": {
+      "agent_id": "Tasnim Cyber Cafe",
+      "alerts": [
+        {
+          "alert_id": "560c7e6d-462e-4940-acc4-859506a45c9a",
+          "agent_id": "Tasnim Cyber Cafe",
+          "provider": "bkash",
+          "alert_type": "liquidity_emoney",
+          "risk_level": "Critical",
+          "message_en": "High liquidity pressure detected. Burn rate is 100.0%.",
+          "message_bn": "অতিরিক্ত তারল্য চাপ সনাক্ত হয়েছে। বার্ন রেট 100.0%।",
+          "message_banglish": "Oti-rikto liquidity pressure paowa geche. Burn rate 100.0%.",
+          "recommended_action": "Agent should arrange more funds or contact field officer.",
+          "evidence_details": {
+            "type": "liquidity_emoney",
+            "provider": "bkash",
+            "burn_rate": 1.0,
+            "risk_level": "Critical",
+            "current_balance": 50000.0,
+            "demand_1h": 54362.8
+          },
+          "confidence_level": "High Confidence",
+          "timestamp": "2026-07-11T23:28:47.399298Z"
+        },
+        {
+          "alert_id": "3a0493fe-14d0-4f85-a437-c5863649cb65",
+          "agent_id": "Tasnim Cyber Cafe",
+          "provider": null,
+          "alert_type": "liquidity_physical_cash",
+          "risk_level": "Critical",
+          "message_en": "High liquidity pressure detected. Burn rate is 64.6%.",
+          "message_bn": "অতিরিক্ত তারল্য চাপ সনাক্ত হয়েছে। বার্ন রেট 64.6%।",
+          "message_banglish": "Oti-rikto liquidity pressure paowa geche. Burn rate 64.6%.",
+          "recommended_action": "Agent should arrange more funds or contact field officer.",
+          "evidence_details": {
+            "type": "liquidity_physical_cash",
+            "provider": null,
+            "burn_rate": 0.645517,
+            "risk_level": "Critical",
+            "current_balance": 100000.0,
+            "demand_1h": 64551.7
+          },
+          "confidence_level": "High Confidence",
+          "timestamp": "2026-07-11T23:28:47.399342Z"
+        }
+      ],
+      "data_quality_score": 1.0,
+      "analysis_timestamp": "2026-07-11T23:28:47.399351Z"
+    }
+  },
+  {
+    "agent_id": "Khaleda General Store",
+    "request_payload_summary": "11 txns",
+    "analytics_response": {
+      "agent_id": "Khaleda General Store",
+      "alerts": [
+        {
+          "alert_id": "244a7086-48eb-44c4-a8bc-598efe4a33f7",
+          "agent_id": "Khaleda General Store",
+          "provider": "bkash",
+          "alert_type": "liquidity_emoney",
+          "risk_level": "Critical",
+          "message_en": "High liquidity pressure detected. Burn rate is 100.0%.",
+          "message_bn": "অতিরিক্ত তারল্য চাপ সনাক্ত হয়েছে। বার্ন রেট 100.0%।",
+          "message_banglish": "Oti-rikto liquidity pressure paowa geche. Burn rate 100.0%.",
+          "recommended_action": "Agent should arrange more funds or contact field officer.",
+          "evidence_details": {
+            "type": "liquidity_emoney",
+            "provider": "bkash",
+            "burn_rate": 1.0,
+            "risk_level": "Critical",
+            "current_balance": 50000.0,
+            "demand_1h": 190694.92
+          },
+          "confidence_level": "High Confidence",
+          "timestamp": "2026-07-11T23:28:49.463979Z"
+        },
+        {
+          "alert_id": "98630771-86e4-4e41-9bb8-486c77d815c4",
+          "agent_id": "Khaleda General Store",
+          "provider": "rocket",
+          "alert_type": "liquidity_emoney",
+          "risk_level": "Critical",
+          "message_en": "High liquidity pressure detected. Burn rate is 100.0%.",
+          "message_bn": "অতিরিক্ত তারল্য চাপ সনাক্ত হয়েছে। বার্ন রেট 100.0%।",
+          "message_banglish": "Oti-rikto liquidity pressure paowa geche. Burn rate 100.0%.",
+          "recommended_action": "Agent should arrange more funds or contact field officer.",
+          "evidence_details": {
+            "type": "liquidity_emoney",
+            "provider": "rocket",
+            "burn_rate": 1.0,
+            "risk_level": "Critical",
+            "current_balance": 50000.0,
+            "demand_1h": 82698.4
+          },
+          "confidence_level": "High Confidence",
+          "timestamp": "2026-07-11T23:28:49.464036Z"
+        },
+        {
+          "alert_id": "0b5c245a-4783-4f88-a83b-3cc3e235a3ad",
+          "agent_id": "Khaleda General Store",
+          "provider": null,
+          "alert_type": "liquidity_physical_cash",
+          "risk_level": "Critical",
+          "message_en": "High liquidity pressure detected. Burn rate is 100.0%.",
+          "message_bn": "অতিরিক্ত তারল্য চাপ সনাক্ত হয়েছে। বার্ন রেট 100.0%।",
+          "message_banglish": "Oti-rikto liquidity pressure paowa geche. Burn rate 100.0%.",
+          "recommended_action": "Agent should arrange more funds or contact field officer.",
+          "evidence_details": {
+            "type": "liquidity_physical_cash",
+            "provider": null,
+            "burn_rate": 1.0,
+            "risk_level": "Critical",
+            "current_balance": 100000.0,
+            "demand_1h": 107185.32
+          },
+          "confidence_level": "High Confidence",
+          "timestamp": "2026-07-11T23:28:49.464058Z"
+        }
+      ],
+      "data_quality_score": 1.0,
+      "analysis_timestamp": "2026-07-11T23:28:49.464066Z"
+    }
+  },
+  {
+    "agent_id": "Rahim Store",
+    "request_payload_summary": "19 txns",
+    "analytics_response": {
+      "agent_id": "Rahim Store",
+      "alerts": [
+        {
+          "alert_id": "9fc17915-aba2-4345-8d20-d38b703a0d39",
+          "agent_id": "Rahim Store",
+          "provider": "rocket",
+          "alert_type": "liquidity_emoney",
+          "risk_level": "High",
+          "message_en": "High liquidity pressure detected. Burn rate is 20.0%.",
+          "message_bn": "অতিরিক্ত তারল্য চাপ সনাক্ত হয়েছে। বার্ন রেট 20.0%।",
+          "message_banglish": "Oti-rikto liquidity pressure paowa geche. Burn rate 20.0%.",
+          "recommended_action": "Agent should arrange more funds or contact field officer.",
+          "evidence_details": {
+            "type": "liquidity_emoney",
+            "provider": "rocket",
+            "burn_rate": 0.20009765625,
+            "risk_level": "High",
+            "current_balance": 50000.0,
+            "demand_1h": 10004.8828125
+          },
+          "confidence_level": "High Confidence",
+          "timestamp": "2026-07-11T23:28:51.526481Z"
+        },
+        {
+          "alert_id": "7c1f462f-2d5d-450a-95d3-d68df0053fdd",
+          "agent_id": "Rahim Store",
+          "provider": null,
+          "alert_type": "liquidity_physical_cash",
+          "risk_level": "Warning",
+          "message_en": "High liquidity pressure detected. Burn rate is 17.0%.",
+          "message_bn": "অতিরিক্ত তারল্য চাপ সনাক্ত হয়েছে। বার্ন রেট 17.0%।",
+          "message_banglish": "Oti-rikto liquidity pressure paowa geche. Burn rate 17.0%.",
+          "recommended_action": "Agent should arrange more funds or contact field officer.",
+          "evidence_details": {
+            "type": "liquidity_physical_cash",
+            "provider": null,
+            "burn_rate": 0.17038312587890625,
+            "risk_level": "Warning",
+            "current_balance": 100000.0,
+            "demand_1h": 17038.312587890625
+          },
+          "confidence_level": "High Confidence",
+          "timestamp": "2026-07-11T23:28:51.526521Z"
+        }
+      ],
+      "data_quality_score": 1.0,
+      "analysis_timestamp": "2026-07-11T23:28:51.526530Z"
+    }
+  },
+  {
+    "agent_id": "Rafiq Cash & Carry",
+    "request_payload_summary": "10 txns",
+    "analytics_response": {
+      "agent_id": "Rafiq Cash & Carry",
+      "alerts": [
+        {
+          "alert_id": "d6291b76-7f6d-4f77-8734-7299290dd221",
+          "agent_id": "Rafiq Cash & Carry",
+          "provider": "bkash",
+          "alert_type": "liquidity_emoney",
+          "risk_level": "Critical",
+          "message_en": "High liquidity pressure detected. Burn rate is 88.4%.",
+          "message_bn": "অতিরিক্ত তারল্য চাপ সনাক্ত হয়েছে। বার্ন রেট 88.4%।",
+          "message_banglish": "Oti-rikto liquidity pressure paowa geche. Burn rate 88.4%.",
+          "recommended_action": "Agent should arrange more funds or contact field officer.",
+          "evidence_details": {
+            "type": "liquidity_emoney",
+            "provider": "bkash",
+            "burn_rate": 0.8837147999999999,
+            "risk_level": "Critical",
+            "current_balance": 50000.0,
+            "demand_1h": 44185.74
+          },
+          "confidence_level": "High Confidence",
+          "timestamp": "2026-07-11T23:28:53.584237Z"
+        }
+      ],
+      "data_quality_score": 1.0,
+      "analysis_timestamp": "2026-07-11T23:28:53.584292Z"
+    }
+  },
+  {
+    "agent_id": "Parveen General Store",
+    "request_payload_summary": "15 txns",
+    "analytics_response": {
+      "agent_id": "Parveen General Store",
+      "alerts": [
+        {
+          "alert_id": "906ea102-bf7a-4f4b-9632-89b6815b01bb",
+          "agent_id": "Parveen General Store",
+          "provider": "nagad",
+          "alert_type": "liquidity_emoney",
+          "risk_level": "Critical",
+          "message_en": "High liquidity pressure detected. Burn rate is 100.0%.",
+          "message_bn": "অতিরিক্ত তারল্য চাপ সনাক্ত হয়েছে। বার্ন রেট 100.0%।",
+          "message_banglish": "Oti-rikto liquidity pressure paowa geche. Burn rate 100.0%.",
+          "recommended_action": "Agent should arrange more funds or contact field officer.",
+          "evidence_details": {
+            "type": "liquidity_emoney",
+            "provider": "nagad",
+            "burn_rate": 1.0,
+            "risk_level": "Critical",
+            "current_balance": 50000.0,
+            "demand_1h": 72759.54
+          },
+          "confidence_level": "High Confidence",
+          "timestamp": "2026-07-11T23:28:55.657897Z"
+        },
+        {
+          "alert_id": "b01cb450-e16d-4674-95f3-093d98b5317a",
+          "agent_id": "Parveen General Store",
+          "provider": "rocket",
+          "alert_type": "liquidity_emoney",
+          "risk_level": "Critical",
+          "message_en": "High liquidity pressure detected. Burn rate is 100.0%.",
+          "message_bn": "অতিরিক্ত তারল্য চাপ সনাক্ত হয়েছে। বার্ন রেট 100.0%।",
+          "message_banglish": "Oti-rikto liquidity pressure paowa geche. Burn rate 100.0%.",
+          "recommended_action": "Agent should arrange more funds or contact field officer.",
+          "evidence_details": {
+            "type": "liquidity_emoney",
+            "provider": "rocket",
+            "burn_rate": 1.0,
+            "risk_level": "Critical",
+            "current_balance": 50000.0,
+            "demand_1h": 56900.4
+          },
+          "confidence_level": "High Confidence",
+          "timestamp": "2026-07-11T23:28:55.657948Z"
+        },
+        {
+          "alert_id": "3f0e7b4b-88fa-428c-b929-fbe814ba2b06",
+          "agent_id": "Parveen General Store",
+          "provider": null,
+          "alert_type": "liquidity_physical_cash",
+          "risk_level": "High",
+          "message_en": "High liquidity pressure detected. Burn rate is 34.7%.",
+          "message_bn": "অতিরিক্ত তারল্য চাপ সনাক্ত হয়েছে। বার্ন রেট 34.7%।",
+          "message_banglish": "Oti-rikto liquidity pressure paowa geche. Burn rate 34.7%.",
+          "recommended_action": "Agent should arrange more funds or contact field officer.",
+          "evidence_details": {
+            "type": "liquidity_physical_cash",
+            "provider": null,
+            "burn_rate": 0.3474078,
+            "risk_level": "High",
+            "current_balance": 100000.0,
+            "demand_1h": 34740.78
+          },
+          "confidence_level": "High Confidence",
+          "timestamp": "2026-07-11T23:28:55.657976Z"
+        },
+        {
+          "alert_id": "698fb74a-2e05-4e30-94dd-a6d681493799",
+          "agent_id": "Parveen General Store",
+          "provider": "nagad",
+          "alert_type": "anomaly_high_value",
+          "risk_level": "Medium",
+          "message_en": "Unusual transaction pattern detected: Max Z-Score of 2.35 detected.",
+          "message_bn": "অস্বাভাবিক লেনদেনের ধরন সনাক্ত হয়েছে। পর্যালোচনা প্রয়োজন।",
+          "message_banglish": "Oshavabik transaction pattern dekha geche. Review kora dorkar.",
+          "recommended_action": "Risk team to review recent transactions for this provider.",
+          "evidence_details": {
+            "type": "anomaly_high_value",
+            "provider": "nagad",
+            "risk_level": "Medium",
+            "evidence": "Max Z-Score of 2.35 detected.",
+            "evidence_details": {
+              "transaction_ids": [
+                "413488a0-966a-44b8-aded-dcc16fa6a0a1"
+              ],
+              "z_scores": [
+                2.346346794125471
+              ]
+            },
+            "confidence_override": "Low Confidence"
+          },
+          "confidence_level": "Low Confidence",
+          "timestamp": "2026-07-11T23:28:55.657995Z"
+        }
+      ],
+      "data_quality_score": 1.0,
+      "analysis_timestamp": "2026-07-11T23:28:55.658005Z"
+    }
+  },
+  {
+    "agent_id": "Lipi Telecom",
+    "request_payload_summary": "25 txns",
+    "analytics_response": {
+      "agent_id": "Lipi Telecom",
+      "alerts": [
+        {
+          "alert_id": "7e51685f-aadb-4116-aa70-baf7780ba917",
+          "agent_id": "Lipi Telecom",
+          "provider": "bkash",
+          "alert_type": "liquidity_emoney",
+          "risk_level": "Critical",
+          "message_en": "High liquidity pressure detected. Burn rate is 49.7%.",
+          "message_bn": "অতিরিক্ত তারল্য চাপ সনাক্ত হয়েছে। বার্ন রেট 49.7%।",
+          "message_banglish": "Oti-rikto liquidity pressure paowa geche. Burn rate 49.7%.",
+          "recommended_action": "Agent should arrange more funds or contact field officer.",
+          "evidence_details": {
+            "type": "liquidity_emoney",
+            "provider": "bkash",
+            "burn_rate": 0.4965192,
+            "risk_level": "Critical",
+            "current_balance": 50000.0,
+            "demand_1h": 24825.96
+          },
+          "confidence_level": "High Confidence",
+          "timestamp": "2026-07-11T23:28:57.724562Z"
+        },
+        {
+          "alert_id": "80e44a66-2323-474c-b345-8f1eef5904f1",
+          "agent_id": "Lipi Telecom",
+          "provider": "nagad",
+          "alert_type": "liquidity_emoney",
+          "risk_level": "Critical",
+          "message_en": "High liquidity pressure detected. Burn rate is 100.0%.",
+          "message_bn": "অতিরিক্ত তারল্য চাপ সনাক্ত হয়েছে। বার্ন রেট 100.0%।",
+          "message_banglish": "Oti-rikto liquidity pressure paowa geche. Burn rate 100.0%.",
+          "recommended_action": "Agent should arrange more funds or contact field officer.",
+          "evidence_details": {
+            "type": "liquidity_emoney",
+            "provider": "nagad",
+            "burn_rate": 1.0,
+            "risk_level": "Critical",
+            "current_balance": 50000.0,
+            "demand_1h": 113352.4
+          },
+          "confidence_level": "High Confidence",
+          "timestamp": "2026-07-11T23:28:57.724611Z"
+        },
+        {
+          "alert_id": "145ac1a5-439f-464b-a97d-5e836be6d200",
+          "agent_id": "Lipi Telecom",
+          "provider": null,
+          "alert_type": "liquidity_physical_cash",
+          "risk_level": "Critical",
+          "message_en": "High liquidity pressure detected. Burn rate is 100.0%.",
+          "message_bn": "অতিরিক্ত তারল্য চাপ সনাক্ত হয়েছে। বার্ন রেট 100.0%।",
+          "message_banglish": "Oti-rikto liquidity pressure paowa geche. Burn rate 100.0%.",
+          "recommended_action": "Agent should arrange more funds or contact field officer.",
+          "evidence_details": {
+            "type": "liquidity_physical_cash",
+            "provider": null,
+            "burn_rate": 1.0,
+            "risk_level": "Critical",
+            "current_balance": 100000.0,
+            "demand_1h": 157358.28
+          },
+          "confidence_level": "High Confidence",
+          "timestamp": "2026-07-11T23:28:57.724637Z"
+        }
+      ],
+      "data_quality_score": 1.0,
+      "analysis_timestamp": "2026-07-11T23:28:57.724648Z"
+    }
+  },
+  {
+    "agent_id": "Shahin Mobile Shop",
+    "request_payload_summary": "14 txns",
+    "analytics_response": {
+      "agent_id": "Shahin Mobile Shop",
+      "alerts": [
+        {
+          "alert_id": "ab5ba10d-7ce3-4629-9ba9-7daf9098a5c3",
+          "agent_id": "Shahin Mobile Shop",
+          "provider": "nagad",
+          "alert_type": "liquidity_emoney",
+          "risk_level": "Critical",
+          "message_en": "High liquidity pressure detected. Burn rate is 100.0%.",
+          "message_bn": "অতিরিক্ত তারল্য চাপ সনাক্ত হয়েছে। বার্ন রেট 100.0%।",
+          "message_banglish": "Oti-rikto liquidity pressure paowa geche. Burn rate 100.0%.",
+          "recommended_action": "Agent should arrange more funds or contact field officer.",
+          "evidence_details": {
+            "type": "liquidity_emoney",
+            "provider": "nagad",
+            "burn_rate": 1.0,
+            "risk_level": "Critical",
+            "current_balance": 50000.0,
+            "demand_1h": 72704.6
+          },
+          "confidence_level": "High Confidence",
+          "timestamp": "2026-07-11T23:28:59.779303Z"
+        },
+        {
+          "alert_id": "e49e3379-785f-4c66-aaf1-4631e1338bcd",
+          "agent_id": "Shahin Mobile Shop",
+          "provider": "rocket",
+          "alert_type": "liquidity_emoney",
+          "risk_level": "Critical",
+          "message_en": "High liquidity pressure detected. Burn rate is 100.0%.",
+          "message_bn": "অতিরিক্ত তারল্য চাপ সনাক্ত হয়েছে। বার্ন রেট 100.0%।",
+          "message_banglish": "Oti-rikto liquidity pressure paowa geche. Burn rate 100.0%.",
+          "recommended_action": "Agent should arrange more funds or contact field officer.",
+          "evidence_details": {
+            "type": "liquidity_emoney",
+            "provider": "rocket",
+            "burn_rate": 1.0,
+            "risk_level": "Critical",
+            "current_balance": 50000.0,
+            "demand_1h": 103075.68
+          },
+          "confidence_level": "High Confidence",
+          "timestamp": "2026-07-11T23:28:59.779341Z"
+        },
+        {
+          "alert_id": "e9f251bc-a52f-4af4-86d0-4b2310fce65b",
+          "agent_id": "Shahin Mobile Shop",
+          "provider": null,
+          "alert_type": "liquidity_physical_cash",
+          "risk_level": "Critical",
+          "message_en": "High liquidity pressure detected. Burn rate is 45.5%.",
+          "message_bn": "অতিরিক্ত তারল্য চাপ সনাক্ত হয়েছে। বার্ন রেট 45.5%।",
+          "message_banglish": "Oti-rikto liquidity pressure paowa geche. Burn rate 45.5%.",
+          "recommended_action": "Agent should arrange more funds or contact field officer.",
+          "evidence_details": {
+            "type": "liquidity_physical_cash",
+            "provider": null,
+            "burn_rate": 0.45508760000000004,
+            "risk_level": "Critical",
+            "current_balance": 100000.0,
+            "demand_1h": 45508.76
+          },
+          "confidence_level": "High Confidence",
+          "timestamp": "2026-07-11T23:28:59.779361Z"
+        }
+      ],
+      "data_quality_score": 1.0,
+      "analysis_timestamp": "2026-07-11T23:28:59.779368Z"
+    }
+  },
+  {
+    "agent_id": "Bashir Telecom",
+    "request_payload_summary": "8 txns",
+    "analytics_response": {
+      "agent_id": "Bashir Telecom",
+      "alerts": [
+        {
+          "alert_id": "9787e0ef-c001-4973-bb43-126dff59ba79",
+          "agent_id": "Bashir Telecom",
+          "provider": "rocket",
+          "alert_type": "liquidity_emoney",
+          "risk_level": "Critical",
+          "message_en": "High liquidity pressure detected. Burn rate is 100.0%.",
+          "message_bn": "অতিরিক্ত তারল্য চাপ সনাক্ত হয়েছে। বার্ন রেট 100.0%।",
+          "message_banglish": "Oti-rikto liquidity pressure paowa geche. Burn rate 100.0%.",
+          "recommended_action": "Agent should arrange more funds or contact field officer.",
+          "evidence_details": {
+            "type": "liquidity_emoney",
+            "provider": "rocket",
+            "burn_rate": 1.0,
+            "risk_level": "Critical",
+            "current_balance": 50000.0,
+            "demand_1h": 109150.36
+          },
+          "confidence_level": "High Confidence",
+          "timestamp": "2026-07-11T23:29:01.831801Z"
+        },
+        {
+          "alert_id": "3e398bb3-280f-417a-b983-7852b2d92323",
+          "agent_id": "Bashir Telecom",
+          "provider": null,
+          "alert_type": "liquidity_physical_cash",
+          "risk_level": "Critical",
+          "message_en": "High liquidity pressure detected. Burn rate is 100.0%.",
+          "message_bn": "অতিরিক্ত তারল্য চাপ সনাক্ত হয়েছে। বার্ন রেট 100.0%।",
+          "message_banglish": "Oti-rikto liquidity pressure paowa geche. Burn rate 100.0%.",
+          "recommended_action": "Agent should arrange more funds or contact field officer.",
+          "evidence_details": {
+            "type": "liquidity_physical_cash",
+            "provider": null,
+            "burn_rate": 1.0,
+            "risk_level": "Critical",
+            "current_balance": 100000.0,
+            "demand_1h": 166043.32
+          },
+          "confidence_level": "High Confidence",
+          "timestamp": "2026-07-11T23:29:01.831845Z"
+        }
+      ],
+      "data_quality_score": 1.0,
+      "analysis_timestamp": "2026-07-11T23:29:01.831854Z"
+    }
+  },
+  {
+    "agent_id": "Salam Mobile Corner",
+    "request_payload_summary": "13 txns",
+    "analytics_response": {
+      "agent_id": "Salam Mobile Corner",
+      "alerts": [
+        {
+          "alert_id": "64d7ff13-e43a-4d23-b5e2-f8969e8bf3d6",
+          "agent_id": "Salam Mobile Corner",
+          "provider": "bkash",
+          "alert_type": "liquidity_emoney",
+          "risk_level": "Critical",
+          "message_en": "High liquidity pressure detected. Burn rate is 100.0%.",
+          "message_bn": "অতিরিক্ত তারল্য চাপ সনাক্ত হয়েছে। বার্ন রেট 100.0%।",
+          "message_banglish": "Oti-rikto liquidity pressure paowa geche. Burn rate 100.0%.",
+          "recommended_action": "Agent should arrange more funds or contact field officer.",
+          "evidence_details": {
+            "type": "liquidity_emoney",
+            "provider": "bkash",
+            "burn_rate": 1.0,
+            "risk_level": "Critical",
+            "current_balance": 50000.0,
+            "demand_1h": 61885.84
+          },
+          "confidence_level": "High Confidence",
+          "timestamp": "2026-07-11T23:29:03.920341Z"
+        },
+        {
+          "alert_id": "0fe292fa-dd21-422f-ad23-c9823ef85b11",
+          "agent_id": "Salam Mobile Corner",
+          "provider": "nagad",
+          "alert_type": "liquidity_emoney",
+          "risk_level": "Critical",
+          "message_en": "High liquidity pressure detected. Burn rate is 100.0%.",
+          "message_bn": "অতিরিক্ত তারল্য চাপ সনাক্ত হয়েছে। বার্ন রেট 100.0%।",
+          "message_banglish": "Oti-rikto liquidity pressure paowa geche. Burn rate 100.0%.",
+          "recommended_action": "Agent should arrange more funds or contact field officer.",
+          "evidence_details": {
+            "type": "liquidity_emoney",
+            "provider": "nagad",
+            "burn_rate": 1.0,
+            "risk_level": "Critical",
+            "current_balance": 50000.0,
+            "demand_1h": 167071.24
+          },
+          "confidence_level": "High Confidence",
+          "timestamp": "2026-07-11T23:29:03.920381Z"
+        }
+      ],
+      "data_quality_score": 1.0,
+      "analysis_timestamp": "2026-07-11T23:29:03.920389Z"
+    }
+  }
+]

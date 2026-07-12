@@ -19,7 +19,7 @@ def detect_cv_clustering(prov_df: pd.DataFrame, provider_value: str) -> list:
                 "provider": provider_value,
                 "risk_level": RiskLevel.MEDIUM if cv > 0.1 else RiskLevel.HIGH,
                 "evidence": f"Unusually stable transaction amounts detected (CV={cv:.2f} < {settings.CV_MODERATE}). Possible repeated amounts.",
-                "evidence_details": {"transaction_ids": tx_ids, "cv": cv}
+                "evidence_details": {"transaction_ids": tx_ids, "cv": float(cv)}
             })
             
     return alerts

@@ -5,8 +5,13 @@ export const setSocketInstance = (socketIo) => {
 };
 
 export const dispatchAlert = (alert, caseData) => {
-  if (!io) return;
+  console.log("dispatchAlert called with alert:", JSON.stringify(alert));
+  if (!io) {
+    console.log("dispatchAlert: NO IO SERVER");
+    return;
+  }
   const { agent_id, provider_id, severity } = alert;
+  console.log("dispatchAlert routing to agent_id:", agent_id, "provider_id:", provider_id);
   io.to(`agent:${agent_id}`).emit("alert:new", { alert, case: caseData, localizedTitle: { bn: alert.title_bn, en: alert.title_en, banglish: alert.title_banglish } });
   if (provider_id) io.to(`provider:${provider_id}`).emit("alert:provider", { alert, case: caseData });
   if (severity === "critical" || severity === "high") io.to("role:area_manager").emit("alert:area", { alert, case: caseData });
