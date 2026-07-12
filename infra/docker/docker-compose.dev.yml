@@ -68,7 +68,7 @@ services:
     ports:
       - "8000:8000"
     environment:
-      - OPENAI_API_KEY=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
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
       - DB_HOST=timescaledb
       - DB_PORT=5432
       - DB_NAME=mfs_risk_platform
