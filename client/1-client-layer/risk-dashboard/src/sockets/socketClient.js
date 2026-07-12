@@ -1,0 +1,1 @@
+import{io}from'socket.io-client';let socket;export function areaSocket(){if(!socket)socket=io(import.meta.env.VITE_SOCKET_URL||window.location.origin,{autoConnect:false,transports:['websocket'],auth:{token:localStorage.getItem('shahajjo_token')}});return socket}

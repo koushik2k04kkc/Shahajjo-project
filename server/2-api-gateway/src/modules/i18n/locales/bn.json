@@ -1,0 +1,19 @@
+{
+  "alert": {
+    "liquidity_title": "তরলতা সংকট",
+    "anomaly_title": "অস্বাভাবিক কার্যকলাপ",
+    "requires_review": "মানব পর্যালোচনা প্রয়োজন",
+    "confidence": "নির্ভরযোগ্যতা",
+    "possible_causes": "সম্ভাব্য কারণ",
+    "next_step": "পরবর্তী পদক্ষেপ",
+    "escalated": "উন্নীত করা হয়েছে",
+    "resolved": "সমাধান করা হয়েছে"
+  },
+  "roles": {
+    "agent": "এজেন্ট",
+    "field_officer": "ফিল্ড অফিসার",
+    "area_manager": "এরিয়া ম্যানেজার",
+    "ops_team": "অপারেশনস টীম",
+    "risk_analyst": "রিস্ক অ্যানালিস্ট"
+  }
+}

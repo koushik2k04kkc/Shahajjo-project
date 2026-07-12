@@ -1,0 +1,2 @@
+import { X } from 'lucide-react'
+export default function AlertToast({alert,onClose}){if(!alert)return null;return <div className="fixed bottom-20 left-4 right-4 z-50 mx-auto max-w-md rounded-2xl border border-orange-200 bg-white p-4 shadow-xl"><button onClick={onClose} className="absolute right-3 top-3"><X className="size-4"/></button><p className="pr-6 text-sm font-bold">{alert.title}</p><p className="mt-1 text-xs text-slate-500">{alert.provider} · {alert.confidence}% confidence</p></div>}
