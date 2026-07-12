@@ -14,7 +14,7 @@ The working prototype demonstrates a comprehensive live flow:
 - Launch the **Ops Portal** at `http://localhost:5174` to see the central operations view.
 - Launch the **Risk Dashboard** at `http://localhost:5175` to monitor system-wide anomalies.
 
-![Risk Dashboard](./risk_dashboard.png)
+![Risk Dashboard](./image2.png)
 ---
 ## 2. Source Repository & Setup Steps
 ### Project Structure
@@ -55,7 +55,7 @@ This is a monorepo managed with Turborepo and pnpm.
    ```
 ---
 ## 3. Architecture
-![Architecture Diagram](./image2.png)
+![Architecture Diagram](./architecture.png)
 Our architecture is designed for scale, real-time updates, and cross-provider aggregation:
 - **Main Interfaces:** Three distinct React-based web portals tailored for different user personas (Agent, Operations, Risk).
 - **API Gateway:** A unified entry point (Node.js/Express) routing requests and handling authentication and rate-limiting.
